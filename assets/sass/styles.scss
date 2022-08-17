@@ -154,6 +154,7 @@ a {
         right: -100%;
         width: 100%;
         height: 100vh;
+        transition: .3s;
     }
 
     .nav__list.active {
@@ -321,6 +322,7 @@ a {
         margin: 6px 0;
         border-radius: .75rem;
         background: #fff;
+        transition: .3s ease-in-out;
     }
 
     .nav__humbger.active::before {
