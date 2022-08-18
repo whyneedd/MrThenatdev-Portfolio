@@ -213,6 +213,11 @@ a {
 .about__data.active {
   transform: translateX(-100%);
 }
+@media screen and (max-width: 600px) {
+  .about__data {
+    padding: 20px;
+  }
+}
 
 /* ======= WORK =======*/
 .work {
