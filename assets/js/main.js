@@ -12,6 +12,19 @@ function navbar() {
 }
 navbar();
 
+var tl;
+
+tl = gsap.timeline({ defauts: { ease: "power.out" } });
+
+function aboutSlider() {
+    window.addEventListener("scroll", () => {
+        if (this.scrollY > 0) {
+            tl.to(".about__data", { duraction: .5, x: "0%", stagger: .25, opacity: 1, })
+        }
+    })
+}
+aboutSlider();
+
 
 var navHumbger = document.querySelector(".nav__humbger");
 var menu = document.querySelector(".nav__list");

@@ -174,7 +174,7 @@ a {
   font-size: 25px;
   text-align: center;
   color: var(--second-main-color);
-  width: 370px;
+  width: 470px;
 }
 .home__btn {
   display: block;
@@ -203,6 +203,15 @@ a {
 .about {
   position: relative;
   padding: 4rem 0 5rem;
+}
+.about__data {
+  text-align: left;
+  color: #fff;
+  font-weight: 600;
+  transform: translateX(-100%);
+}
+.about__data.active {
+  transform: translateX(-100%);
 }
 
 /* ======= WORK =======*/
@@ -265,12 +274,16 @@ a {
 }
 .footer__social li {
   display: inline-block;
-  margin-left: 1rem;
+  margin-left: 0.45rem;
 }
 .footer__social li a {
   display: block;
   font-size: 25px;
   color: #fff;
+  transition: 0.3s;
+}
+.footer__data li a:hover {
+  transform: scale(1.1);
 }
 .footer__data h2 {
   font-size: 2rem;

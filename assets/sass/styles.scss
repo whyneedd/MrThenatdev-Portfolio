@@ -180,7 +180,7 @@ a {
         font-size: 25px;
         text-align: center;
         color: var(--second-main-color);
-        width: 370px;
+        width: 470px;
     }
     &__btn {
         display: block;
@@ -211,6 +211,15 @@ a {
 .about {
     position: relative;
     padding: 4rem 0 5rem;
+    &__data {
+        text-align: left;
+        color: #fff;
+        font-weight: 600;
+        transform: translateX(-100%);
+    }
+    &__data.active {
+        transform: translateX(-100%);
+    }
 }
 
 /* ======= WORK =======*/
@@ -273,12 +282,17 @@ a {
     }
     &__social li {
         display: inline-block;
-        margin-left: 1rem;
+        margin-left: .45rem;
     }
     &__social li a {
         display: block;
         font-size: 25px;
         color: #fff;
+        transition: .3s;
+    }
+    &__data li a:hover {
+        transform: scale(1.1);
+
     }
     &__data h2 {
         font-size: 2rem;

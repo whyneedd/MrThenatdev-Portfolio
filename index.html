@@ -9,7 +9,7 @@
     <meta property="og:title" content="Zertox-dev">
     <meta property="og:site_name" content="Zertox Portfolio">
     <meta name="og:theme-color" content="#1e1c2a">
-    <link rel="icon" type="image/png" href="https://cdn.pixabay.com/photo/2020/07/14/13/07/icon-5404125_1280">
+    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/82006962?v=4">
 
     <!-- ===== Google Fonts ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +25,11 @@
 
     <!-- ===== Box Icons ===== -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ===== Animation ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"
+        integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <title>Zertox Personal</title>
 </head>
@@ -54,7 +59,7 @@
         <div class="home">
             <div class="home__data">
                 <h1>Who am i ?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis doloribus non alias!</p>
+                <p>Full stack web. self-taught programming student.</p>
                 <button class="home__btn" onclick="location.href='https://www.instagram.com/i.jordaan.a'" type="button">
                     Hire me
                 </button>
@@ -65,33 +70,52 @@
     <!-- =====  ABOUT===== -->
     <section class="section" id="About">
         <h2 class="section__title">About</h2>
-        <div class="about bd-grid" style="text-align: center;">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus dolore reiciendis est nulla
-                fugit animi alias quia nihil, odit necessitatibus architecto quae veritatis, inventore repellat facilis,
-                commodi quam quasi eligendi. Perspiciatis odio minus molestiae impedit atque soluta beatae officiis
-                laborum aperiam unde amet consequatur exercitationem dolore at, commodi illum est nostrum voluptatum qui
-                voluptate. Ad veritatis magnam culpa ipsam esse! Eligendi, quod eaque facilis recusandae beatae fugiat
-                aut nesciunt eos quae, accusantium unde, quos molestiae neque laborum a tenetur ratione dignissimos sed.
-                Necessitatibus, debitis eos. Perspiciatis, animi. Error, voluptates. Non, magnam. Natus, voluptatibus
-                totam quis, ipsa consectetur laborum laboriosam atque possimus, maiores excepturi veritatis praesentium.
-                Omnis aliquam suscipit corporis reiciendis distinctio cupiditate neque eius iure vero aperiam in totam
-                ratione, officia necessitatibus voluptate similique, iusto dolorem dolores numquam! Nobis inventore quod
-                porro quaerat aut aspernatur nostrum eaque dignissimos aliquid, ex officia asperiores quae vel molestiae
-                cupiditate animi quam optio quisquam, laborum accusamus ducimus sit quidem. Et distinctio saepe libero
-                numquam tempore accusamus! Voluptate nulla necessitatibus temporibus neque, laboriosam minus natus,
-                obcaecati illum nemo harum dolor totam ut asperiores nam ipsum corporis repellat perferendis praesentium
-                inventore ex. Repudiandae, ullam! Similique laborum eaque aut alias voluptas sapiente hic sed, porro
-                cumque minus iusto voluptatibus. Consequuntur pariatur natus ipsa possimus, earum distinctio ducimus
-                maxime nihil autem voluptates beatae corrupti saepe necessitatibus dolorem eveniet cumque perspiciatis
-                omnis optio minus dicta dolore. Cupiditate porro iusto commodi officiis cum, quidem vero cumque amet
-                libero suscipit, eligendi rem sunt earum facilis aspernatur pariatur dolores quasi iste placeat. Quia
-                accusantium placeat doloremque, mollitia nulla eos porro et cupiditate, temporibus tenetur ipsam animi
-                laboriosam reiciendis nesciunt voluptatem sapiente distinctio odit pariatur! Neque tempore ducimus
-                praesentium assumenda sed sapiente quod aspernatur saepe nihil impedit a repellendus, totam delectus
-                illum, voluptates atque pariatur. Saepe at quos placeat architecto maxime illo eum impedit, deleniti, ut
-                est, accusantium atque quo. Vitae saepe minus sapiente! Ipsa, beatae at expedita voluptatum, totam omnis
-                saepe obcaecati minima facere sapiente magni aperiam ut veritatis, maxime repudiandae asperiores
-                pariatur itaque eum! Reprehenderit, velit enim ipsum eius at cum quasi nisi veniam iusto.</p>
+        <div class="about bd-grid">
+            <div class="about__data">
+                <h2>Hi, i am</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus dolore reiciendis est nulla
+                    fugit animi alias quia nihil, odit necessitatibus architecto quae veritatis, inventore repellat
+                    facilis,
+                    commodi quam quasi eligendi. Perspiciatis odio minus molestiae impedit atque soluta beatae officiis
+                    laborum aperiam unde amet consequatur exercitationem dolore at, commodi illum est nostrum voluptatum
+                    qui
+                    voluptate. Ad veritatis magnam culpa ipsam esse! Eligendi, quod eaque facilis recusandae beatae
+                    fugiat
+                    aut nesciunt eos quae, accusantium unde, quos molestiae neque laborum a tenetur ratione dignissimos
+                    sed.
+                    Necessitatibus, debitis eos. Perspiciatis, animi. Error, voluptates. Non, magnam. Natus,
+                    voluptatibus
+                    totam quis, ipsa consectetur laborum laboriosam atque possimus, maiores excepturi veritatis
+                    praesentium.
+                    Omnis aliquam suscipit corporis reiciendis distinctio cupiditate neque eius iure vero aperiam in
+                    totam
+                    ratione, officia necessitatibus voluptate similique, iusto dolorem dolores numquam! Nobis inventore
+                    quod
+                    porro quaerat aut aspernatur nostrum eaque dignissimos aliquid, ex officia asperiores quae vel
+                    molestiae
+                    cupiditate animi quam optio quisquam, laborum accusamus ducimus sit quidem. Et distinctio saepe
+                    libero
+                    numquam tempore accusamus! Voluptate nulla necessitatibus temporibus neque, laboriosam minus natus,
+                    obcaecati illum nemo harum dolor totam ut asperiores nam ipsum corporis repellat perferendis
+                    praesentium
+                    inventore ex. Repudiandae, ullam! Similique laborum eaque aut alias voluptas sapiente hic sed, porro
+                    cumque minus iusto voluptatibus. Consequuntur pariatur natus ipsa possimus, earum distinctio ducimus
+                    maxime nihil autem voluptates beatae corrupti saepe necessitatibus dolorem eveniet cumque
+                    perspiciatis
+                    omnis optio minus dicta dolore. Cupiditate porro iusto commodi officiis cum, quidem vero cumque amet
+                    libero suscipit, eligendi rem sunt earum facilis aspernatur pariatur dolores quasi iste placeat.
+                    Quia
+                    accusantium placeat doloremque, mollitia nulla eos porro et cupiditate, temporibus tenetur ipsam
+                    animi
+                    laboriosam reiciendis nesciunt voluptatem sapiente distinctio odit pariatur! Neque tempore ducimus
+                    praesentium assumenda sed sapiente quod aspernatur saepe nihil impedit a repellendus, totam delectus
+                    illum, voluptates atque pariatur. Saepe at quos placeat architecto maxime illo eum impedit,
+                    deleniti, ut
+                    est, accusantium atque quo. Vitae saepe minus sapiente! Ipsa, beatae at expedita voluptatum, totam
+                    omnis
+                    saepe obcaecati minima facere sapiente magni aperiam ut veritatis, maxime repudiandae asperiores
+                    pariatur itaque eum! Reprehenderit, velit enim ipsum eius at cum quasi nisi veniam iusto.</p>
+            </div>
         </div>
     </section>
 
@@ -138,10 +162,21 @@
                     <h2>Zertox</h2>
                     <div class="footer__social">
                         <ul>
-                            <li><a href="http://github.com/Zertox-dev"> <i class="bx bxl-github"></i></a></li>
-                            <li><a href="#"> <i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="http://www.instagram.com/i.jordaan.a"> <i class="bx bxl-instagram"></i></a></li>
-                            <li><a href="https://discord.gg/6p3QyuNgxZ"> <i class="bx bxl-discord-alt"></i></a></li>
+                            <li>
+                                <a href="http://github.com/Zertox-dev"> <i class="bx bxl-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="bx bxl-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://www.instagram.com/i.jordaan.a"> <i class="bx bxl-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://discord.gg/6p3QyuNgxZ"> <i class="bx bxl-discord-alt"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://www.buymeacoffee.com/Zertoxdev"> <i class='bx bx-coffee-togo'></i></a>
+                            </li>
                         </ul>
                     </div>
                     <p> 2022 &copy;All right reserved, developed by Zertox</p>
