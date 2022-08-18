@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    color: rgb(0, 0, 0);
+}
+
 *,
 ::before,
 ::after {
@@ -169,40 +173,36 @@ a {
 /* ======= HOME =======*/
 .home {
     position: relative;
-    padding: 4rem 0 5rem;
+    padding: 6rem 0 5rem;
     &__data {
-        align-self: center;
+        margin-left: 50%;
+        transform: translateX(-50%);
         font-size: 25px;
+        text-align: center;
         color: var(--second-main-color);
         width: 370px;
-    }
-    &__img {
-        position: absolute;
-        display: block;
-        right: 0;
-        bottom: 0;
-        width: 270px;
     }
     &__btn {
         display: block;
         margin-top: 10px;
+        margin-left: 50%;
+        transform: translateX(-50%);
         padding: 10px 50px;
         border: none;
         outline: none;
         border-radius: 0.75rem;
+        cursor: pointer;
+        transition: .3s;
         background: var(--second-main-color);
+    }
+    &__btn:hover {
+        background: rgb(158, 156, 156);
     }
 
     @media screen and (max-width: 600px) {
-        &__img {
-            bottom: -9rem;
-            right: 100px;
-            width: 160px;
-        }
         &__data {
-            margin-left: 40px;
             font-size: 18px;
-            width: 230px;
+            width: 280px;
         }
     }
 }

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="https://cdn.pixabay.com/photo/2020/07/14/13/07/icon-5404125_1280.png">
-    <meta property="og:title" content="Zertox">
+    <meta property="og:title" content="Zertox-dev">
     <meta property="og:site_name" content="Zertox Portfolio">
     <meta name="og:theme-color" content="#1e1c2a">
     <link rel="icon" type="image/png" href="https://cdn.pixabay.com/photo/2020/07/14/13/07/icon-5404125_1280">
@@ -18,12 +18,12 @@
         rel="stylesheet">
 
     <!-- ===== Css ===== -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!-- ===== Js ===== -->
     <script src="assets/js/main.js" defer></script>
 
-    <!-- ===== Icons ===== -->
+    <!-- ===== Box Icons ===== -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Zertox Personal</title>
@@ -37,10 +37,10 @@
             </div>
             <nav class="nav__menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link"> Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link"> About</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link"> Work</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link"> Contact</a></li>
+                    <li class="nav__item"><a href="#Home" class="nav__link"> Home</a></li>
+                    <li class="nav__item"><a href="#About" class="nav__link"> About</a></li>
+                    <li class="nav__item"><a href="#Work" class="nav__link"> Work</a></li>
+                    <li class="nav__item"><a href="#Contact" class="nav__link"> Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -50,24 +50,20 @@
     </header>
 
     <!-- ===== HOME ===== -->
-    <section class="section">
-        <div class="home bd-grid">
+    <section class="section" id="Home">
+        <div class="home">
             <div class="home__data">
                 <h1>Who am i ?</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis doloribus non alias!</p>
-                <button class="home__btn">
+                <button class="home__btn" onclick="location.href='https://www.instagram.com/i.jordaan.a'" type="button">
                     Hire me
                 </button>
-            </div>
-            <div class="home__img">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydHJhaXR8ZW58MHx8MHx8&w=1000&q=80"
-                    alt="">
             </div>
         </div>
     </section>
 
     <!-- =====  ABOUT===== -->
-    <section class="section">
+    <section class="section" id="About">
         <h2 class="section__title">About</h2>
         <div class="about bd-grid" style="text-align: center;">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error doloribus dolore reiciendis est nulla
@@ -100,7 +96,7 @@
     </section>
 
     <!-- =====WORK ===== -->
-    <section class="section">
+    <section class="section" id="Work">
         <h2 class="section__title">Work</h2>
         <div class="work">
             <div class="work__container">
@@ -135,17 +131,17 @@
     </section>
     <!-- ===== FOOTER ===== -->
 
-    <footer class="footer">
+    <footer class="footer" id="Contact">
         <div class="footer__container">
             <div class="footer__column">
                 <div class="footer__data">
                     <h2>Zertox</h2>
                     <div class="footer__social">
                         <ul>
-                            <li><a href="#"> <i class="bx bxl-github"></i></a></li>
+                            <li><a href="http://github.com/Zertox-dev"> <i class="bx bxl-github"></i></a></li>
                             <li><a href="#"> <i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"> <i class="bx bxl-instagram"></i></a></li>
-                            <li><a href="#"> <i class="bx bxl-discord-alt"></i></a></li>
+                            <li><a href="http://www.instagram.com/i.jordaan.a"> <i class="bx bxl-instagram"></i></a></li>
+                            <li><a href="https://discord.gg/6p3QyuNgxZ"> <i class="bx bxl-discord-alt"></i></a></li>
                         </ul>
                     </div>
                     <p> 2022 &copy;All right reserved, developed by Zertox</p>
