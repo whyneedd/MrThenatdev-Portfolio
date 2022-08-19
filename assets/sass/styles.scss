@@ -111,7 +111,7 @@ a {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: #1c1e2a;
+    background: #313446;
     box-shadow: 0 1px 5px rgb(0, 0, 0, 0.45);
     transition: top 0.3s;
 }
@@ -129,9 +129,11 @@ a {
     }
 }
 
-.nav__item {
-    display: inline-block;
-    margin-left: 1rem;
+.nav__menu {
+    .nav__item {
+        display: inline-block;
+        margin-left: 1rem;
+    }
 }
 
 .nav__item {
@@ -139,6 +141,10 @@ a {
         display: block;
         color: var(--second-main-color);
         font-weight: 600;
+        transition: 0.3s;
+    }
+    .nav__link:hover {
+        color: #b9b6b6;
     }
 }
 
@@ -195,7 +201,7 @@ a {
         background: var(--second-main-color);
     }
     &__btn:hover {
-        background: rgb(158, 156, 156);
+        background: #b9b6b6;
     }
 
     @media screen and (max-width: 600px) {
@@ -211,13 +217,9 @@ a {
     position: relative;
     padding: 4rem 0 5rem;
     &__data {
-        text-align: left;
         color: #fff;
         font-weight: 600;
         opacity: 0;
-        transform: translateX(-100%);
-    }
-    &__data.active {
         transform: translateX(-100%);
     }
     @media screen and (max-width: 600px) {
@@ -285,17 +287,19 @@ a {
         font-size: 15px;
         font-weight: 600;
     }
-    &__social li {
+    &__social &__item {
         display: inline-block;
         margin-left: 0.45rem;
     }
-    &__social li a {
+    &__social &__item &__icon {
         display: block;
         font-size: 25px;
         color: #fff;
         transition: 0.3s;
     }
-    &__data li a:hover {
+
+    &__data &__item &__icon:hover {
+        color: #b9b6b6;
         transform: scale(1.1);
     }
     &__data h2 {
@@ -356,6 +360,3 @@ a {
         opacity: 0;
     }
 }
-
-/* =======  =======*/
-/* =======  =======*/

@@ -111,7 +111,7 @@ a {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: #1c1e2a;
+  background: #313446;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.45);
   transition: top 0.3s;
 }
@@ -127,7 +127,7 @@ a {
   font-size: 1.5rem;
 }
 
-.nav__item {
+.nav__menu .nav__item {
   display: inline-block;
   margin-left: 1rem;
 }
@@ -136,6 +136,10 @@ a {
   display: block;
   color: var(--second-main-color);
   font-weight: 600;
+  transition: 0.3s;
+}
+.nav__item .nav__link:hover {
+  color: #b9b6b6;
 }
 
 @media screen and (max-width: 600px) {
@@ -190,7 +194,7 @@ a {
   background: var(--second-main-color);
 }
 .home__btn:hover {
-  background: rgb(158, 156, 156);
+  background: #b9b6b6;
 }
 @media screen and (max-width: 600px) {
   .home__data {
@@ -205,13 +209,9 @@ a {
   padding: 4rem 0 5rem;
 }
 .about__data {
-  text-align: left;
   color: #fff;
   font-weight: 600;
   opacity: 0;
-  transform: translateX(-100%);
-}
-.about__data.active {
   transform: translateX(-100%);
 }
 @media screen and (max-width: 600px) {
@@ -278,17 +278,18 @@ a {
   font-size: 15px;
   font-weight: 600;
 }
-.footer__social li {
+.footer__social .footer__item {
   display: inline-block;
   margin-left: 0.45rem;
 }
-.footer__social li a {
+.footer__social .footer__item .footer__icon {
   display: block;
   font-size: 25px;
   color: #fff;
   transition: 0.3s;
 }
-.footer__data li a:hover {
+.footer__data .footer__item .footer__icon:hover {
+  color: #b9b6b6;
   transform: scale(1.1);
 }
 .footer__data h2 {
@@ -320,7 +321,9 @@ a {
   .nav__humbger {
     display: block;
   }
-  .nav__humbger .bar, .nav__humbger::before, .nav__humbger::after {
+  .nav__humbger .bar,
+.nav__humbger::before,
+.nav__humbger::after {
     content: "";
     display: block;
     width: 100%;
@@ -340,7 +343,5 @@ a {
     opacity: 0;
   }
 }
-/* =======  =======*/
-/* =======  =======*/
 
 /*# sourceMappingURL=styles.css.map */
