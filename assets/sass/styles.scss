@@ -143,7 +143,6 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-
     .logo {
         margin-left: 50px;
     }
@@ -158,7 +157,7 @@ a {
         right: -100%;
         width: 100%;
         height: 100vh;
-        transition: .3s;
+        transition: 0.3s;
     }
 
     .nav__list.active {
@@ -192,7 +191,7 @@ a {
         outline: none;
         border-radius: 0.75rem;
         cursor: pointer;
-        transition: .3s;
+        transition: 0.3s;
         background: var(--second-main-color);
     }
     &__btn:hover {
@@ -215,6 +214,7 @@ a {
         text-align: left;
         color: #fff;
         font-weight: 600;
+        opacity: 0;
         transform: translateX(-100%);
     }
     &__data.active {
@@ -269,7 +269,7 @@ a {
 /* ======= FOOTER =======*/
 .footer {
     padding: 70px 0;
-    background:  #313446;
+    background: #313446;
     &__container {
         position: relative;
         max-width: 350px;
@@ -287,17 +287,16 @@ a {
     }
     &__social li {
         display: inline-block;
-        margin-left: .45rem;
+        margin-left: 0.45rem;
     }
     &__social li a {
         display: block;
         font-size: 25px;
         color: #fff;
-        transition: .3s;
+        transition: 0.3s;
     }
     &__data li a:hover {
         transform: scale(1.1);
-
     }
     &__data h2 {
         font-size: 2rem;
@@ -312,7 +311,6 @@ a {
         }
     }
 }
-
 
 /* ======= NAV HUMBGER =======*/
 .nav__humbger {
@@ -333,15 +331,17 @@ a {
         display: block;
     }
 
-    .nav__humbger .bar, .nav__humbger::before, .nav__humbger::after {
+    .nav__humbger .bar,
+    .nav__humbger::before,
+    .nav__humbger::after {
         content: "";
         display: block;
         width: 100%;
         height: 5px;
         margin: 6px 0;
-        border-radius: .75rem;
+        border-radius: 0.75rem;
         background: #fff;
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
     }
 
     .nav__humbger.active::before {
@@ -349,7 +349,7 @@ a {
     }
 
     .nav__humbger.active::after {
-        transform: rotate(45deg) translate(-9px, -8px);   
+        transform: rotate(45deg) translate(-9px, -8px);
     }
 
     .nav__humbger.active .bar {

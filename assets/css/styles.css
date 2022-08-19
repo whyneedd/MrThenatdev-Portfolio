@@ -208,6 +208,7 @@ a {
   text-align: left;
   color: #fff;
   font-weight: 600;
+  opacity: 0;
   transform: translateX(-100%);
 }
 .about__data.active {
