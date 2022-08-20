@@ -19,6 +19,7 @@
 :root {
     --main-color: #1c1e2a;
     --second-main-color: #fff;
+    --main-color-bg: #061db4;
 }
 html {
     scroll-behavior: smooth;
@@ -181,11 +182,11 @@ a {
 .home {
     position: relative;
     row-gap: 5rem;
-    padding: 6rem 0 5rem;
+    padding: 7rem 0 5rem;
     &__data {
         margin-left: 50%;
         transform: translateX(-50%);
-        font-size: 25px;
+        font-size: 27px;
         text-align: center;
         color: var(--second-main-color);
         width: 470px;
@@ -195,9 +196,10 @@ a {
         margin-top: 10px;
         margin-left: 50%;
         transform: translateX(-50%);
-        padding: 10px 50px;
+        padding: 15px 56px;
         border: none;
         outline: none;
+        font-weight: 600;
         border-radius: 0.75rem;
         cursor: pointer;
         transition: 0.3s;
@@ -217,11 +219,11 @@ a {
 
 /* ======= ABOUT =======*/
 .about {
+    opacity: 0;
+    transform: translateX(-100%);
     &__data {
         color: #fff;
         font-weight: 600;
-        opacity: 0;
-        transform: translateX(-100%);
     }
     @media screen and (max-width: 600px) {
         &__data {
@@ -232,6 +234,8 @@ a {
 
 /* ======= SKILLS =======*/
 .skills {
+    opacity: 0;
+    transform: translateX(-100%);
     &__container {
         display: flex;
         justify-content: center;
@@ -245,8 +249,8 @@ a {
     &__card {
         position: relative;
         max-width: 450px;
-        padding: .75rem;
-        border-radius: .25rem;
+        padding: 0.75rem;
+        border-radius: 0.25rem;
         background: #313446;
         box-shadow: 0 4px 15px rgb(0, 0, 0);
     }
@@ -255,52 +259,52 @@ a {
         height: 7px;
         background-color: #fff;
         overflow: hidden;
-        border-radius: .75rem;
+        border-radius: 0.75rem;
     }
     &__card .lineCompetenceCss {
         width: 95%;
-        height: 7px;
-        background-color: #1c1e2a;
+        height: 10px;
+        background-color: var(--main-color-bg);
     }
     &__card .lineCompetenceJs {
         width: 70%;
         height: 7px;
-        background-color: #1c1e2a;
+        background-color: var(--main-color-bg);
     }
     &__card .lineCompetenceHtml {
         width: 95%;
         height: 7px;
-        background-color: #1c1e2a;
+        background-color: var(--main-color-bg);
     }
     &__card .lineCompetenceC {
         width: 45%;
         height: 7px;
-        background-color: #1c1e2a;
+        background-color: var(--main-color-bg);
     }
     &__card .lineCompetenceBash {
         width: 65%;
         height: 7px;
-        background-color: #1c1e2a;
+        background-color: var(--main-color-bg);
     }
     &__card .lineCompetenceGit {
         width: 52%;
         height: 7px;
-        background-color: #1c1e2a;
+        background-color: var(--main-color-bg);
     }
     &__card .lineCompetenceSass {
         width: 95%;
         height: 7px;
-        background-color: #1c1e2a;
+        background-color: var(--main-color-bg);
     }
     &__card .lineCompetenceReactJS {
         width: 35%;
         height: 7px;
-        background-color: #1c1e2a;
+        background-color: var(--main-color-bg);
     }
     &__card .lineCompetenceExpress {
         width: 43%;
         height: 7px;
-        background-color: #1c1e2a;
+        background-color: var(--main-color-bg);
     }
     &__card .pourcente {
         margin-top: 5px;
@@ -312,8 +316,11 @@ a {
         }
     }
 }
+
 /* ======= WORK =======*/
 .work {
+    opacity: 0;
+    transform: translateX(-100%);
     &__container {
         display: flex;
         justify-content: center;
@@ -346,6 +353,58 @@ a {
         &__container {
             padding: 20px;
         }
+    }
+}
+
+/* ======= CONTACT =======*/
+.contact {
+    opacity: 0;
+    transform: translateX(-100%);
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    &__data {
+        width: 480px;
+    }
+    &__data form {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    &__data #email {
+        padding: 10px;
+        border: none;
+        border-radius: 0.25rem;
+        outline: none;
+    }
+    &__data #desc {
+        padding: 10px;
+        width: 100%;
+        resize: none;
+        border: none;
+        border-radius: 0.25rem;
+        outline: none;
+    }
+    &__data #submit {
+        width: 140px;
+        padding: 10px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        z-index: 2;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        background: #ffff;
+        box-shadow: 0 0.56px 15px rgb(255, 255, 255);
+        transition: 0.3s;
+    }
+
+    &__data #submit:hover {
+        background: #b9b9b9;
+        transform: translateY(-8%);
     }
 }
 
