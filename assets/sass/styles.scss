@@ -67,6 +67,8 @@ a {
     position: relative;
     text-align: center;
     font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     color: var(--second-main-color);
 }
 
@@ -178,6 +180,7 @@ a {
 /* ======= HOME =======*/
 .home {
     position: relative;
+    row-gap: 5rem;
     padding: 6rem 0 5rem;
     &__data {
         margin-left: 50%;
@@ -214,8 +217,6 @@ a {
 
 /* ======= ABOUT =======*/
 .about {
-    position: relative;
-    padding: 4rem 0 5rem;
     &__data {
         color: #fff;
         font-weight: 600;
@@ -229,10 +230,90 @@ a {
     }
 }
 
+/* ======= SKILLS =======*/
+.skills {
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__grid {
+        display: grid;
+        gap: 1.5rem 2.5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &__card {
+        position: relative;
+        max-width: 450px;
+        padding: .75rem;
+        border-radius: .25rem;
+        background: #313446;
+        box-shadow: 0 4px 15px rgb(0, 0, 0);
+    }
+    &__card .lineGray {
+        width: 300px;
+        height: 7px;
+        background-color: #fff;
+        overflow: hidden;
+        border-radius: .75rem;
+    }
+    &__card .lineCompetenceCss {
+        width: 95%;
+        height: 7px;
+        background-color: #1c1e2a;
+    }
+    &__card .lineCompetenceJs {
+        width: 70%;
+        height: 7px;
+        background-color: #1c1e2a;
+    }
+    &__card .lineCompetenceHtml {
+        width: 95%;
+        height: 7px;
+        background-color: #1c1e2a;
+    }
+    &__card .lineCompetenceC {
+        width: 45%;
+        height: 7px;
+        background-color: #1c1e2a;
+    }
+    &__card .lineCompetenceBash {
+        width: 65%;
+        height: 7px;
+        background-color: #1c1e2a;
+    }
+    &__card .lineCompetenceGit {
+        width: 52%;
+        height: 7px;
+        background-color: #1c1e2a;
+    }
+    &__card .lineCompetenceSass {
+        width: 95%;
+        height: 7px;
+        background-color: #1c1e2a;
+    }
+    &__card .lineCompetenceReactJS {
+        width: 35%;
+        height: 7px;
+        background-color: #1c1e2a;
+    }
+    &__card .lineCompetenceExpress {
+        width: 43%;
+        height: 7px;
+        background-color: #1c1e2a;
+    }
+    &__card .pourcente {
+        margin-top: 5px;
+        font-weight: 600;
+    }
+    @media screen and (max-width: 600px) {
+        &__grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
 /* ======= WORK =======*/
 .work {
-    position: relative;
-    padding: 4rem 0 5rem;
     &__container {
         display: flex;
         justify-content: center;
