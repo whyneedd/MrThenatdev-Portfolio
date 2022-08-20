@@ -238,9 +238,9 @@
         <div class="contact">
             <div class="contact__container">
                 <div class="contact__data">
-                    <form method="post">
-                        <input type="email" name="" id="email" placeholder="Your email">
-                        <textarea name="" id="desc" cols="50" rows="5" placeholder="Your message"></textarea>
+                    <form method="post" action="#">
+                        <input type="email" name="" id="email" placeholder="Your email" required>
+                        <textarea name="" id="desc" cols="50" rows="5" placeholder="Your message" required></textarea>
                         <input type="submit" id="submit" value="Submit">
                     </form>
                 </div>
@@ -283,6 +283,22 @@
             </div>
         </div>
     </footer>
+
+    <!-- ===== COOKIE ===== -->
+    <div class="cookie active">
+        <div class="cookie__container">
+            <div class="cookie__img">
+                <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" alt="">
+            </div>
+            <div class="cookie__details">
+                <p>This website uses cookies <br> to ensure you get the best <br> experience on our website</p>
+            </div>
+            <div class="cookie__boxBtn">
+                <button class="cookie__btn btn-accept"> Accepted</button>
+                <button class="cookie__btn btn-cancel"> Cancel</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
