@@ -19,17 +19,17 @@ tl = gsap.timeline({ defauts: { ease: "power.out" } });
 function Scroll() {
     window.addEventListener("scroll", () => {
         if (this.scrollY > 100) {
-            tl.to(".about", { duraction: .5, x: "0%", stagger: .25, opacity: 1, })
+            tl.to(".about", { duration: .5, x: "0%", stagger: .25, opacity: 1, })
         }
         if (this.scrollY > 200) {
-            tl.to(".skills", { duraction: .5, x: "0%", stagger: .25, opacity: 1, })
+            tl.to(".skills", { duration: .5, x: "0%", stagger: .25, opacity: 1, })
 
         }
         if (this.scrollY > 300) {
-            tl.to(".work", { duraction: .5, x: "0%", stagger: .25, opacity: 1, })
+            tl.to(".work", { duration: .5, x: "0%", stagger: .25, opacity: 1, })
         }
         if (this.scrollY > 400) {
-            tl.to(".contact", { duraction: .5, x: "0%", stagger: .25, opacity: 1, })
+            tl.to(".contact", { duration: .5, x: "0%", stagger: .25, opacity: 1, })
         }
     })
 }
