@@ -386,10 +386,10 @@ a {
   outline: none;
   font-size: 15px;
   z-index: 2;
+  font-weight: 600;
   border-radius: 1.5rem;
   cursor: pointer;
-  background: white;
-  box-shadow: 0 0.56px 15px rgb(255, 255, 255);
+  background: #4b4f68;
   transition: 0.3s;
 }
 .contact__data #submit:hover {
