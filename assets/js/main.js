@@ -39,17 +39,17 @@ let cookieModal = document.querySelector(".cookie")
 let cancelCookieBtn = document.querySelector(".btn-cancel")
 let acceptCookieBtn = document.querySelector(".btn-accept")
 
-cancelCookieBtn.addEventListener("click", function (){
+cancelCookieBtn.addEventListener("click", function () {
     cookieModal.classList.remove("active")
 })
-acceptCookieBtn.addEventListener("click", function (){
+acceptCookieBtn.addEventListener("click", function () {
     cookieModal.classList.remove("active")
     localStorage.setItem("cookieAccepted", "yes")
 })
 
-setTimeout(function (){
+setTimeout(function () {
     let cookieAccepted = localStorage.getItem("cookieAccepted")
-    if (cookieAccepted != "yes"){
+    if (cookieAccepted != "yes") {
         cookieModal.classList.add("active")
     }
 }, 2000)
@@ -63,4 +63,13 @@ navHumbger.addEventListener("click", () => {
 
 navHumbger.onclick = () => {
     menu.classList.toggle("active")
+}
+
+
+function SendMail() {
+    var link = "mailto:azalee4l@hotmail.com?subject=Message from" 
+    + document.getElementById("email").value 
+    + "&body=" + document.getElementById("email").value;
+
+    window.location.href = link;
 }

@@ -238,10 +238,10 @@
         <div class="contact">
             <div class="contact__container">
                 <div class="contact__data">
-                    <form method="post" action="#">
+                    <form action="" method="post">
                         <input type="email" name="" id="email" placeholder="Your email" required>
                         <textarea name="" id="desc" cols="50" rows="5" placeholder="Your message" required></textarea>
-                        <input type="submit" id="submit" value="Submit">
+                        <input type="submit" id="submit" value="Submit" onclick="SendMail();  reset(); return false;">
                     </form>
                 </div>
             </div>
@@ -299,6 +299,8 @@
             </div>
         </div>
     </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
