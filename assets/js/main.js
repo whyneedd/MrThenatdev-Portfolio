@@ -72,3 +72,21 @@ function SendMail() {
 
     window.location.href = link;
 }
+
+
+
+function loading() {
+    var ld;
+
+    window.addEventListener("load", showpage)
+    function showpage() {
+        ld = setTimeout(showpage2, 12000);
+    }
+
+    function showpage2() {
+        document.querySelector(".load").style.display = "none";
+        document.querySelector(".l-main").style.display = "block";
+
+    }
+}
+loading();
