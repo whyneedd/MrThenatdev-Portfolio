@@ -14,22 +14,22 @@ navbar();
 
 var tl;
 
-tl = gsap.timeline({ defauts: { ease: "power1.out" }});
+tl = gsap.timeline({ defauts: { ease: "power1.out" } });
 
 function Scroll() {
     window.addEventListener("scroll", () => {
         if (this.scrollY > 100) {
-            tl.to(".about", { duration: .5, x: "0%", stagger: .25, opacity: 1, })
+            tl.to(".about", { opacity: 1, duration: .5, x: 0, stagger: .25 })
         }
         if (this.scrollY > 200) {
-            tl.to(".skills", { duration: .5, x: "0%", stagger: .25, opacity: 1, })
+            tl.to(".skills", { opacity: 1, duration: .5, x: 0, stagger: .25 })
 
         }
         if (this.scrollY > 300) {
-            tl.to(".work", { duration: .5, x: "0%", stagger: .25, opacity: 1, })
+            tl.to(".work", { opacity: 1, duration: .5, x: 0, stagger: .25 })
         }
         if (this.scrollY > 400) {
-            tl.to(".contact", { duration: .5, x: "0%", stagger: .25, opacity: 1, })
+            tl.to(".contact", { opacity: 1, duration: .5, x: 0, stagger: .25 })
         }
     })
 }
@@ -66,9 +66,9 @@ navHumbger.onclick = () => {
 }
 
 function SendMail() {
-    var link = "mailto:azalee4l@hotmail.com?subject=Nouveaux messages de " 
-    + document.getElementById("email").value 
-    + "&body=" + document.getElementById("desc").value;
+    var link = "mailto:azalee4l@hotmail.com?subject=Nouveaux messages de "
+        + document.getElementById("email").value
+        + "&body=" + document.getElementById("desc").value;
 
     window.location.href = link;
 }
