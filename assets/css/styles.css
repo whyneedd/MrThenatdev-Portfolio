@@ -206,6 +206,9 @@ a {
     font-size: 18px;
     width: 280px;
   }
+  .home__btn {
+    width: 180px;
+  }
 }
 
 /* ======= ABOUT =======*/
