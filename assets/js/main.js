@@ -14,7 +14,7 @@ navbar();
 
 var tl;
 
-tl = gsap.timeline({ defauts: { ease: "power.out" } });
+tl = gsap.timeline({ defauts: { ease: "power1.out" }});
 
 function Scroll() {
     window.addEventListener("scroll", () => {
@@ -35,9 +35,9 @@ function Scroll() {
 }
 Scroll();
 
-let cookieModal = document.querySelector(".cookie")
-let cancelCookieBtn = document.querySelector(".btn-cancel")
-let acceptCookieBtn = document.querySelector(".btn-accept")
+var cookieModal = document.querySelector(".cookie")
+var cancelCookieBtn = document.querySelector(".btn-cancel")
+var acceptCookieBtn = document.querySelector(".btn-accept")
 
 cancelCookieBtn.addEventListener("click", function () {
     cookieModal.classList.remove("active")
@@ -64,7 +64,6 @@ navHumbger.addEventListener("click", () => {
 navHumbger.onclick = () => {
     menu.classList.toggle("active")
 }
-
 
 function SendMail() {
     var link = "mailto:azalee4l@hotmail.com?subject=Nouveaux messages de " 

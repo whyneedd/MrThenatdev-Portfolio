@@ -236,6 +236,10 @@ a {
 }
 .about__data {
   color: #fff;
+  text-align: center;
+  max-width: 370px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 600;
 }
 @media screen and (max-width: 600px) {
@@ -262,66 +266,53 @@ a {
 .skills__card {
   position: relative;
   max-width: 450px;
-  padding: 0.75rem;
+  padding: 20px;
   border-radius: 0.25rem;
   background: #313446;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-.skills__card .lineGray {
-  width: 300px;
-  height: 7px;
-  background-color: #fff;
-  overflow: hidden;
+.skills__data {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0.5rem 6rem;
+  position: relative;
+}
+.skills__bar {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  height: 6px;
   border-radius: 0.75rem;
+  background: #b9b6b6;
 }
-.skills__card .lineCompetenceCss {
-  width: 85%;
-  height: 10px;
-  background-color: var(--main-color-bg);
-}
-.skills__card .lineCompetenceJs {
-  width: 70%;
-  height: 7px;
-  background-color: var(--main-color-bg);
-}
-.skills__card .lineCompetenceHtml {
-  width: 95%;
-  height: 7px;
-  background-color: var(--main-color-bg);
-}
-.skills__card .lineCompetenceC {
-  width: 45%;
-  height: 7px;
-  background-color: var(--main-color-bg);
-}
-.skills__card .lineCompetenceBash {
-  width: 65%;
-  height: 7px;
-  background-color: var(--main-color-bg);
-}
-.skills__card .lineCompetenceGit {
+.skills__git {
   width: 52%;
-  height: 7px;
-  background-color: var(--main-color-bg);
 }
-.skills__card .lineCompetenceSass {
-  width: 75%;
-  height: 7px;
-  background-color: var(--main-color-bg);
-}
-.skills__card .lineCompetenceReactJS {
+.skills__react {
   width: 35%;
-  height: 7px;
-  background-color: var(--main-color-bg);
 }
-.skills__card .lineCompetenceExpress {
+.skills__c {
+  width: 45%;
+}
+.skills__css {
+  width: 85%;
+}
+.skills__html5 {
+  width: 96%;
+}
+.skills__express {
   width: 43%;
-  height: 7px;
-  background-color: var(--main-color-bg);
 }
-.skills__card .pourcente {
-  margin-top: 5px;
-  font-weight: 600;
+.skills__scss {
+  width: 75%;
+}
+.skills__js {
+  width: 55%;
+}
+.skills__bash {
+  width: 65%;
 }
 @media screen and (max-width: 600px) {
   .skills__grid {
