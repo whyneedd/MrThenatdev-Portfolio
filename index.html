@@ -29,7 +29,9 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- ===== Animation ===== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Zorax Personal</title>
 </head>
@@ -87,7 +89,7 @@
         <!-- =====  ABOUT===== -->
         <section class="section" id="About">
             <h2 class="section__title">About</h2>
-            <div class="about bd-grid">
+            <div class="about bd-grid" data-aos="fade-right" data-aos-duration="1500">
                 <div class="about__data">
                     <h2>Hi !</h2>
                     <p>I'm a digital product designer focusing on crafting user experiences and design systems for
@@ -102,7 +104,7 @@
         <section class="section" id="Skills">
             <h2 class="section__title"> Skills</h2>
             <div class="skills">
-                <div class="skills__container">
+                <div class="skills__container" data-aos="fade-right" data-aos-duration="1500">
                     <div class="skills__grid">
                         <div class="skills__card">
                             <h2><i class='bx bxl-nodejs'></i> Js</h2>
@@ -185,7 +187,7 @@
         <section class="section" id="Work">
             <h2 class="section__title">Work</h2>
             <div class="work">
-                <div class="work__container">
+                <div class="work__container" data-aos="fade-right" data-aos-duration="1500">
                     <div class="work__row">
                         <div class="work__card">
                             <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d29ya3xlbnwwfHwwfHw%3D&w=1000&q=80"
@@ -221,7 +223,7 @@
             <h2 class="section__title">Contact</h2>
 
             <div class="contact">
-                <div class="contact__container">
+                <div class="contact__container" data-aos="fade-right" data-aos-duration="1500">
                     <div class="contact__data">
                         <form action="" method="post">
                             <input type="name" name="" id="email" placeholder="Your name" required>
@@ -236,7 +238,7 @@
         </section>
 
         <!-- ===== FOOTER ===== -->
-        <footer class="footer" id="Contact">
+        <footer class="footer">
             <div class="footer__container">
                 <div class="footer__column">
                     <div class="footer__data">
@@ -287,6 +289,10 @@
             </div>
         </div>
     </main>
+
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

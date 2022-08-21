@@ -298,8 +298,6 @@ a {
 
 /* ======= ABOUT =======*/
 .about {
-    opacity: 0;
-    transform: translateX(-100%);
     &__data {
         color: #fff;
         text-align: center;
@@ -317,8 +315,6 @@ a {
 
 /* ======= SKILLS =======*/
 .skills {
-    opacity: 0;
-    transform: translateX(-100%);
     &__container {
         display: flex;
         justify-content: center;
@@ -390,8 +386,6 @@ a {
 
 /* ======= WORK =======*/
 .work {
-    opacity: 0;
-    transform: translateX(-100%);
     &__container {
         display: flex;
         justify-content: center;
@@ -429,8 +423,6 @@ a {
 
 /* ======= CONTACT =======*/
 .contact {
-    opacity: 0;
-    transform: translateX(-100%);
     &__container {
         display: flex;
         justify-content: center;

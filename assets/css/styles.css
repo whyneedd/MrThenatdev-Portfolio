@@ -286,10 +286,6 @@ a {
 }
 
 /* ======= ABOUT =======*/
-.about {
-  opacity: 0;
-  transform: translateX(-100%);
-}
 .about__data {
   color: #fff;
   text-align: center;
@@ -305,10 +301,6 @@ a {
 }
 
 /* ======= SKILLS =======*/
-.skills {
-  opacity: 0;
-  transform: translateX(-100%);
-}
 .skills__container {
   display: flex;
   justify-content: center;
@@ -377,10 +369,6 @@ a {
 }
 
 /* ======= WORK =======*/
-.work {
-  opacity: 0;
-  transform: translateX(-100%);
-}
 .work__container {
   display: flex;
   justify-content: center;
@@ -415,10 +403,6 @@ a {
 }
 
 /* ======= CONTACT =======*/
-.contact {
-  opacity: 0;
-  transform: translateX(-100%);
-}
 .contact__container {
   display: flex;
   justify-content: center;

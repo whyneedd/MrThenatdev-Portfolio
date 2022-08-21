@@ -12,29 +12,6 @@ function navbar() {
 }
 navbar();
 
-var tl;
-
-tl = gsap.timeline({ defauts: { ease: "power1.out" } });
-
-function Scroll() {
-    window.addEventListener("scroll", () => {
-        if (this.scrollY > 100) {
-            tl.to(".about", { opacity: 1, duration: .5, x: 0, stagger: .25 })
-        }
-        if (this.scrollY > 200) {
-            tl.to(".skills", { opacity: 1, duration: .5, x: 0, stagger: .25 })
-
-        }
-        if (this.scrollY > 300) {
-            tl.to(".work", { opacity: 1, duration: .5, x: 0, stagger: .25 })
-        }
-        if (this.scrollY > 400) {
-            tl.to(".contact", { opacity: 1, duration: .5, x: 0, stagger: .25 })
-        }
-    })
-}
-Scroll();
-
 var cookieModal = document.querySelector(".cookie")
 var cancelCookieBtn = document.querySelector(".btn-cancel")
 var acceptCookieBtn = document.querySelector(".btn-accept")
