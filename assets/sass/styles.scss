@@ -149,6 +149,19 @@ a {
     .nav__link:hover {
         color: #b9b6b6;
     }
+    ::after {
+        content: "";
+        width: 0%;
+        height: 4px;
+        margin: auto;
+        border-radius: 0.75rem;
+        display: block;
+        background: white;
+        transition: 0.3s;
+    }
+    :hover::after {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -255,7 +268,7 @@ a {
         padding: 0.75rem;
         border-radius: 0.25rem;
         background: #313446;
-        box-shadow: 0 4px 15px rgb(0, 0, 0, .2);
+        box-shadow: 0 4px 15px rgb(0, 0, 0, 0.2);
     }
     &__card .lineGray {
         width: 300px;
@@ -265,7 +278,7 @@ a {
         border-radius: 0.75rem;
     }
     &__card .lineCompetenceCss {
-        width: 95%;
+        width: 85%;
         height: 10px;
         background-color: var(--main-color-bg);
     }
@@ -295,7 +308,7 @@ a {
         background-color: var(--main-color-bg);
     }
     &__card .lineCompetenceSass {
-        width: 95%;
+        width: 75%;
         height: 7px;
         background-color: var(--main-color-bg);
     }
@@ -499,7 +512,7 @@ a {
         border-radius: 1.5rem;
         cursor: pointer;
         background: #1c1e2a;
-        transition: .3s;
+        transition: 0.3s;
     }
     &__btn:hover {
         transform: translateY(-5%);

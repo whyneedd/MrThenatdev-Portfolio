@@ -144,6 +144,19 @@ a {
 .nav__item .nav__link:hover {
   color: #b9b6b6;
 }
+.nav__item ::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  margin: auto;
+  border-radius: 0.75rem;
+  display: block;
+  background: white;
+  transition: 0.3s;
+}
+.nav__item :hover::after {
+  width: 100%;
+}
 
 @media screen and (max-width: 600px) {
   .logo {
@@ -257,7 +270,7 @@ a {
   border-radius: 0.75rem;
 }
 .skills__card .lineCompetenceCss {
-  width: 95%;
+  width: 85%;
   height: 10px;
   background-color: var(--main-color-bg);
 }
@@ -287,7 +300,7 @@ a {
   background-color: var(--main-color-bg);
 }
 .skills__card .lineCompetenceSass {
-  width: 95%;
+  width: 75%;
   height: 7px;
   background-color: var(--main-color-bg);
 }
