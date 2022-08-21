@@ -200,7 +200,7 @@ a {
         border: none;
         outline: none;
         font-weight: 600;
-        border-radius: 0.75rem;
+        border-radius: 1.5rem;
         cursor: pointer;
         transition: 0.3s;
         background: var(--second-main-color);
@@ -375,27 +375,27 @@ a {
         grid-template-columns: repeat(1, 1fr);
     }
     &__data #email {
-        padding: 10px;
+        padding: 15px;
         border: none;
-        border-radius: 0.25rem;
+        border-radius: 1.5rem;
         outline: none;
     }
     &__data #desc {
-        padding: 10px;
+        padding: 15px;
         width: 100%;
         resize: none;
         border: none;
-        border-radius: 0.25rem;
+        border-radius: 1.5rem;
         outline: none;
     }
     &__data #submit {
-        width: 140px;
+        width: 100%;
         padding: 10px;
         border: none;
         outline: none;
         font-size: 15px;
         z-index: 2;
-        border-radius: 0.25rem;
+        border-radius: 1.5rem;
         cursor: pointer;
         background: #ffff;
         box-shadow: 0 0.56px 15px rgb(255, 255, 255);
@@ -462,13 +462,13 @@ a {
     display: block;
     max-width: 480px;
     background: #313446;
-    right: -100%;
-    bottom: 2.5rem;
+    right: 2.5rem;
+    bottom: -100%;
     z-index: 2;
     padding: 60px;
     border-radius: 0.75rem;
     box-shadow: 0 1px 35px rgb(0, 0, 0, 0.25);
-    transition: 0.5s;
+    transition: bottom 0.8s;
     &__img img {
         margin-bottom: 2rem;
         max-width: 80px;
@@ -492,13 +492,18 @@ a {
         border: none;
         outline: none;
         color: #ffff;
-        border-radius: 0.75rem;
+        border-radius: 1.5rem;
+        cursor: pointer;
         background: #1c1e2a;
+        transition: .3s;
+    }
+    &__btn:hover {
+        transform: translateY(-5%);
     }
 }
 
 .cookie.active {
-    right: 2.5rem;
+    bottom: 2.5rem;
 }
 
 @media screen and (max-width: 600px) {

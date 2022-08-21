@@ -67,9 +67,9 @@ navHumbger.onclick = () => {
 
 
 function SendMail() {
-    var link = "mailto:azalee4l@hotmail.com?subject=Message from" 
+    var link = "mailto:azalee4l@hotmail.com?subject=Nouveaux messages de " 
     + document.getElementById("email").value 
-    + "&body=" + document.getElementById("email").value;
+    + "&body=" + document.getElementById("desc").value;
 
     window.location.href = link;
 }
