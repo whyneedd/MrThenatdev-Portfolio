@@ -511,7 +511,8 @@ a {
   background: #313446;
   right: 2.5rem;
   bottom: -100%;
-  z-index: 2;
+  opacity: 0;
+  z-index: -2;
   padding: 60px;
   border-radius: 0.75rem;
   box-shadow: 0 1px 35px rgba(0, 0, 0, 0.25);
@@ -551,6 +552,8 @@ a {
 
 .cookie.active {
   bottom: 2.5rem;
+  opacity: 1;
+  z-index: 2;
 }
 
 @media screen and (max-width: 600px) {
