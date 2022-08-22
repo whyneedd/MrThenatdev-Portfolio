@@ -21,6 +21,7 @@
 
     <!-- ===== Css ===== -->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- ===== Js ===== -->
     <script src="assets/js/main.js" defer></script>
@@ -30,263 +31,253 @@
 
     <!-- ===== Animation ===== -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Zorax Personal</title>
 </head>
 
-<body>
+<body onload="showpage()">
+
     <!-- ===== LOADING ===== -->
-    <div class="load">
-        <div class="load__center">
-            <div class="load__container">
-                <div class="load__box"></div>
-                <div class="load__box"></div>
-                <div class="load__box"></div>
+
+    <!-- ===== Nav ===== -->
+    <header class="header js-header">
+        <div class="container">
+            <div class="logo">
+                <h2>Zorax</h2>
+            </div>
+            <nav class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#Home" class="nav__link"> Home</a></li>
+                    <li class="nav__item"><a href="#About" class="nav__link"> About</a></li>
+                    <li class="nav__item"><a href="#Skills" class="nav__link"> Skills</a></li>
+                    <li class="nav__item"><a href="#Work" class="nav__link"> Work</a></li>
+                    <li class="nav__item"><a href="#Contact" class="nav__link"> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav__humbger">
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- ===== HOME ===== -->
+    <section class="section" id="Home">
+        <div class="home" data-aos="fade-right">
+            <div class="home__data">
+                <h1>Who am i ?</h1>
+                <p>Full stack web. self-taught <br> programming student.</p>
+                <div class="home__boxBtn">
+                    <button class="home__btn" onclick="location.href='https://www.instagram.com/i.jordaan.a'"
+                        type="button">
+                        Hire me
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====  ABOUT===== -->
+    <section class="section" id="About">
+        <h2 class="section__title">About</h2>
+        <div class="about bd-grid" data-aos="fade-right">
+            <div class="about__data">
+                <h2>Hi !</h2>
+                <p>I'm a digital product designer focusing on crafting user experiences and design systems for
+                    software,
+                    web, and mobile products. I'm passionate about applying consumer psychology for an interaction
+                    science-backed approach.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS =====  -->
+    <section class="section" id="Skills">
+        <h2 class="section__title"> Skills</h2>
+        <div class="skills" data-aos="fade-right">
+            <div class="skills__container">
+                <div class="skills__grid">
+                    <div class="skills__card">
+                        <h2><i class='bx bxl-nodejs'></i> Js</h2>
+                        <div class="skills__data">
+                            <div class="skills__bar skills__js">
+                            </div>
+                            <p class="skills__pourcente">70%</p>
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <h2><i class='bx bxl-git'></i> Git</h2>
+                        <div class="skills__data">
+                            <div class="skills__bar skills__git">
+                            </div>
+                            <p class="skills__pourcente">52%</p>
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <h2><i class='bx bx-git-branch'></i> Bash</h2>
+                        <div class="skills__data">
+                            <div class="skills__bar skills__bash">
+                            </div>
+                            <p class="skills__pourcente">65%</p>
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <h2><i class='bx bxl-react'></i> React Js</h2>
+                        <div class="skills__data">
+                            <div class="skills__bar skills__react">
+                            </div>
+                            <p class="skills__pourcente">35%</p>
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <h2>C#</h2>
+                        <div class="skills__data">
+                            <div class="skills__bar skills__c">
+                            </div>
+                            <p class="skills__pourcente">45%</p>
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <h2><i class='bx bxl-html5'></i> Html</h2>
+                        <div class="skills__data">
+                            <div class="skills__bar skills__html5">
+                            </div>
+                            <p class="skills__pourcente">96%</p>
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <h2><i class='bx bxl-css3'></i> Css</h2>
+                        <div class="skills__data">
+                            <div class="skills__bar skills__css">
+                            </div>
+                            <p class="skills__pourcente">85%</p>
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <h2><i class='bx bxl-sass'></i> Sass</h2>
+                        <div class="skills__data">
+                            <div class="skills__bar skills__scss">
+                            </div>
+                            <p class="skills__pourcente">75%</p>
+                        </div>
+                    </div>
+                    <div class="skills__card">
+                        <h2>Express</h2>
+                        <div class="skills__data">
+                            <div class="skills__bar skills__express">
+                            </div>
+                            <p class="skills__pourcente">43%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WORK ===== -->
+    <section class="section" id="Work">
+        <h2 class="section__title">Work</h2>
+        <div class="work" data-aos="fade-right">
+            <div class="work__container">
+                <div class="work__row">
+                    <div class="work__card">
+                        <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d29ya3xlbnwwfHwwfHw%3D&w=1000&q=80"
+                            alt="">
+                    </div>
+                    <div class="work__card">
+                        <img src="https://media.istockphoto.com/photos/flat-lay-of-office-desk-wooden-table-with-laptop-and-smartphone-and-picture-id1265192451?b=1&k=20&m=1265192451&s=170667a&w=0&h=WWAi950JcdBPgGhMQAxkrHChQjlWxrfK1XYWo9tExIY="
+                            alt="">
+                    </div>
+                    <div class="work__card">
+                        <img src="https://media.istockphoto.com/photos/flat-lay-of-office-desk-wooden-table-with-laptop-and-smartphone-and-picture-id1265192451?b=1&k=20&m=1265192451&s=170667a&w=0&h=WWAi950JcdBPgGhMQAxkrHChQjlWxrfK1XYWo9tExIY="
+                            alt="">
+                    </div>
+                    <div class="work__card">
+                        <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d29ya3xlbnwwfHwwfHw%3D&w=1000&q=80"
+                            alt="">
+                    </div>
+                    <div class="work__card">
+                        <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d29ya3xlbnwwfHwwfHw%3D&w=1000&q=80"
+                            alt="">
+                    </div>
+                    <div class="work__card">
+                        <img src="https://media.istockphoto.com/photos/flat-lay-of-office-desk-wooden-table-with-laptop-and-smartphone-and-picture-id1265192451?b=1&k=20&m=1265192451&s=170667a&w=0&h=WWAi950JcdBPgGhMQAxkrHChQjlWxrfK1XYWo9tExIY="
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="Contact">
+        <h2 class="section__title">Contact</h2>
+
+        <div class="contact" data-aos="fade-right">
+            <div class="contact__container">
+                <div class="contact__data">
+                    <form action="" method="post">
+                        <input type="name" name="" id="email" placeholder="Your name" required>
+                        <input type="email" name="" id="email" placeholder="Your email" required>
+                        <textarea name="" id="desc" cols="50" rows="5" placeholder="Your message" required></textarea>
+                        <input type="submit" id="submit" value="Send" onclick="SendMail();  reset(); return false;">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__column">
+                <div class="footer__data">
+                    <h2>Zertox</h2>
+                    <div class="footer__social">
+                        <ul>
+                            <li class="footer__item">
+                                <a href="http://github.com/Zertox-dev" class="footer__icon"> <i
+                                        class="bx bxl-github"></i></a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__icon"> <i class="bx bxl-twitter"></i></a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="http://www.instagram.com/i.jordaan.a" class="footer__icon"> <i
+                                        class="bx bxl-instagram"></i></a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="http://discord.gg/6p3QyuNgxZ" class="footer__icon"> <i
+                                        class="bx bxl-discord-alt"></i></a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="http://www.buymeacoffee.com/Zertoxdev" class="footer__icon"> <i
+                                        class='bx bx-coffee-togo'></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p> 2022 &copy;All right reserved, developed by Zertox</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== COOKIE ===== -->
+    <div class="cookie active">
+        <div class="cookie__container">
+            <div class="cookie__img">
+                <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" alt="">
+            </div>
+            <div class="cookie__details">
+                <p>This website uses cookies <br> to ensure you get the best <br> experience on our website.</p>
+            </div>
+            <div class="cookie__boxBtn">
+                <button class="cookie__btn btn-accept"> Accepted</button>
+                <button class="cookie__btn btn-cancel"> Cancel</button>
             </div>
         </div>
     </div>
-
-    <main class="l-main">
-        <!-- ===== Nav ===== -->
-        <header class="header js-header">
-            <div class="container">
-                <div class="logo">
-                    <h2>Zorax</h2>
-                </div>
-                <nav class="nav__menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#Home" class="nav__link"> Home</a></li>
-                        <li class="nav__item"><a href="#About" class="nav__link"> About</a></li>
-                        <li class="nav__item"><a href="#Skills" class="nav__link"> Skills</a></li>
-                        <li class="nav__item"><a href="#Work" class="nav__link"> Work</a></li>
-                        <li class="nav__item"><a href="#Contact" class="nav__link"> Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="nav__humbger">
-                <div class="bar"></div>
-            </div>
-        </header>
-
-        <!-- ===== HOME ===== -->
-        <section class="section" id="Home">
-            <div class="home">
-                <div class="home__data">
-                    <h1>Who am i ?</h1>
-                    <p>Full stack web. self-taught <br> programming student.</p>
-                    <div class="home__boxBtn">
-                        <button class="home__btn" onclick="location.href='https://www.instagram.com/i.jordaan.a'"
-                            type="button">
-                            Hire me
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- =====  ABOUT===== -->
-        <section class="section" id="About">
-            <h2 class="section__title">About</h2>
-            <div class="about bd-grid">
-                <div class="about__data">
-                    <h2>Hi !</h2>
-                    <p>I'm a digital product designer focusing on crafting user experiences and design systems for
-                        software,
-                        web, and mobile products. I'm passionate about applying consumer psychology for an interaction
-                        science-backed approach.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== SKILLS =====  -->
-        <section class="section" id="Skills">
-            <h2 class="section__title"> Skills</h2>
-            <div class="skills">
-                <div class="skills__container">
-                    <div class="skills__grid">
-                        <div class="skills__card">
-                            <h2><i class='bx bxl-nodejs'></i> Js</h2>
-                            <div class="skills__data">
-                                <div class="skills__bar skills__js">
-                                </div>
-                                <p class="skills__pourcente">70%</p>
-                            </div>
-                        </div>
-                        <div class="skills__card">
-                            <h2><i class='bx bxl-git'></i> Git</h2>
-                            <div class="skills__data">
-                                <div class="skills__bar skills__git">
-                                </div>
-                                <p class="skills__pourcente">52%</p>
-                            </div>
-                        </div>
-                        <div class="skills__card">
-                            <h2><i class='bx bx-git-branch'></i> Bash</h2>
-                            <div class="skills__data">
-                                <div class="skills__bar skills__bash">
-                                </div>
-                                <p class="skills__pourcente">65%</p>
-                            </div>
-                        </div>
-                        <div class="skills__card">
-                            <h2><i class='bx bxl-react'></i> React Js</h2>
-                            <div class="skills__data">
-                                <div class="skills__bar skills__react">
-                                </div>
-                                <p class="skills__pourcente">35%</p>
-                            </div>
-                        </div>
-                        <div class="skills__card">
-                            <h2>C#</h2>
-                            <div class="skills__data">
-                                <div class="skills__bar skills__c">
-                                </div>
-                                <p class="skills__pourcente">45%</p>
-                            </div>
-                        </div>
-                        <div class="skills__card">
-                            <h2><i class='bx bxl-html5'></i> Html</h2>
-                            <div class="skills__data">
-                                <div class="skills__bar skills__html5">
-                                </div>
-                                <p class="skills__pourcente">96%</p>
-                            </div>
-                        </div>
-                        <div class="skills__card">
-                            <h2><i class='bx bxl-css3'></i> Css</h2>
-                            <div class="skills__data">
-                                <div class="skills__bar skills__css">
-                                </div>
-                                <p class="skills__pourcente">85%</p>
-                            </div>
-                        </div>
-                        <div class="skills__card">
-                            <h2><i class='bx bxl-sass'></i> Sass</h2>
-                            <div class="skills__data">
-                                <div class="skills__bar skills__scss">
-                                </div>
-                                <p class="skills__pourcente">75%</p>
-                            </div>
-                        </div>
-                        <div class="skills__card">
-                            <h2>Express</h2>
-                            <div class="skills__data">
-                                <div class="skills__bar skills__express">
-                                </div>
-                                <p class="skills__pourcente">43%</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== WORK ===== -->
-        <section class="section" id="Work">
-            <h2 class="section__title">Work</h2>
-            <div class="work">
-                <div class="work__container">
-                    <div class="work__row">
-                        <div class="work__card">
-                            <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d29ya3xlbnwwfHwwfHw%3D&w=1000&q=80"
-                                alt="">
-                        </div>
-                        <div class="work__card">
-                            <img src="https://media.istockphoto.com/photos/flat-lay-of-office-desk-wooden-table-with-laptop-and-smartphone-and-picture-id1265192451?b=1&k=20&m=1265192451&s=170667a&w=0&h=WWAi950JcdBPgGhMQAxkrHChQjlWxrfK1XYWo9tExIY="
-                                alt="">
-                        </div>
-                        <div class="work__card">
-                            <img src="https://media.istockphoto.com/photos/flat-lay-of-office-desk-wooden-table-with-laptop-and-smartphone-and-picture-id1265192451?b=1&k=20&m=1265192451&s=170667a&w=0&h=WWAi950JcdBPgGhMQAxkrHChQjlWxrfK1XYWo9tExIY="
-                                alt="">
-                        </div>
-                        <div class="work__card">
-                            <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d29ya3xlbnwwfHwwfHw%3D&w=1000&q=80"
-                                alt="">
-                        </div>
-                        <div class="work__card">
-                            <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d29ya3xlbnwwfHwwfHw%3D&w=1000&q=80"
-                                alt="">
-                        </div>
-                        <div class="work__card">
-                            <img src="https://media.istockphoto.com/photos/flat-lay-of-office-desk-wooden-table-with-laptop-and-smartphone-and-picture-id1265192451?b=1&k=20&m=1265192451&s=170667a&w=0&h=WWAi950JcdBPgGhMQAxkrHChQjlWxrfK1XYWo9tExIY="
-                                alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== CONTACT ===== -->
-        <section class="section" id="Contact">
-            <h2 class="section__title">Contact</h2>
-
-            <div class="contact">
-                <div class="contact__container">
-                    <div class="contact__data">
-                        <form action="" method="post">
-                            <input type="name" name="" id="email" placeholder="Your name" required>
-                            <input type="email" name="" id="email" placeholder="Your email" required>
-                            <textarea name="" id="desc" cols="50" rows="5" placeholder="Your message"
-                                required></textarea>
-                            <input type="submit" id="submit" value="Send" onclick="SendMail();  reset(); return false;">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== FOOTER ===== -->
-        <footer class="footer">
-            <div class="footer__container">
-                <div class="footer__column">
-                    <div class="footer__data">
-                        <h2>Zertox</h2>
-                        <div class="footer__social">
-                            <ul>
-                                <li class="footer__item">
-                                    <a href="http://github.com/Zertox-dev" class="footer__icon"> <i
-                                            class="bx bxl-github"></i></a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="#" class="footer__icon"> <i class="bx bxl-twitter"></i></a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="http://www.instagram.com/i.jordaan.a" class="footer__icon"> <i
-                                            class="bx bxl-instagram"></i></a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="http://discord.gg/6p3QyuNgxZ" class="footer__icon"> <i
-                                            class="bx bxl-discord-alt"></i></a>
-                                </li>
-                                <li class="footer__item">
-                                    <a href="http://www.buymeacoffee.com/Zertoxdev" class="footer__icon"> <i
-                                            class='bx bx-coffee-togo'></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <p> 2022 &copy;All right reserved, developed by Zertox</p>
-
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- ===== COOKIE ===== -->
-        <div class="cookie active">
-            <div class="cookie__container">
-                <div class="cookie__img">
-                    <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" alt="">
-                </div>
-                <div class="cookie__details">
-                    <p>This website uses cookies <br> to ensure you get the best <br> experience on our website.</p>
-                </div>
-                <div class="cookie__boxBtn">
-                    <button class="cookie__btn btn-accept"> Accepted</button>
-                    <button class="cookie__btn btn-cancel"> Cancel</button>
-                </div>
-            </div>
-        </div>
-    </main>
 </body>
 
 </html>
