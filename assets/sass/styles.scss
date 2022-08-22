@@ -81,6 +81,67 @@ a {
     margin-right: auto;
 }
 
+/* ==== ANIMATION LOADING ===== */
+.load {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    clip-path: circle(75%);
+    background: #313446;
+    transition: opacity 1s;
+    &__center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__container {
+        display: grid;
+        gap: 1rem 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__box {
+        display: grid;
+        width: 35px;
+        height: 35px;
+        border-radius: 1.5rem;
+        background: #b9b6b6;
+        transition: 0.3s;
+        animation-name: load;
+        animation-duration: 0.8s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-fill-mode: both;
+    }
+
+    &__box:nth-child(0) {
+        animation-delay: 0.1s;
+    }
+    &__box:nth-child(2) {
+        animation-delay: 0.3s;
+    }
+    &__box:nth-child(3) {
+        animation-delay: 0.5s;
+    }
+    @keyframes load {
+        0% {
+            transform: translateY(-34px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+}
+.load.active {
+    opacity: 0;
+}
+
 /* ======= Navbar =======*/
 .container {
     max-width: 1150px;

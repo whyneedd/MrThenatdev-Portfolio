@@ -50,3 +50,16 @@ function SendMail() {
 
     window.location.href = link;
 }
+
+
+
+window.addEventListener("load", test);
+
+function test() {
+    setTimeout(show, 3500)
+}
+
+function show() {
+    var ld = document.querySelector(".load")
+        ld.classList.add("active")
+}
