@@ -1,3 +1,8 @@
+ScrollReveal({ reset: true, duration: 1200, distance: "60px", delay: 400 });
+ScrollReveal().reveal('.about', { delay: 100, origin: "left" });
+ScrollReveal().reveal('.skills', { delay: 100, origin: "left" });
+ScrollReveal().reveal('.work', { delay: 100, origin: "left" });
+ScrollReveal().reveal('.contact', { delay: 100, origin: "left" });
 
 var navMenu = document.querySelector(".js-header");
 
@@ -57,7 +62,7 @@ function loading() {
 
     window.addEventListener("load", showpage)
     function showpage() {
-        ld = setTimeout(showpage2, 12000);
+        ld = setTimeout(showpage2, 10);
     }
 
     function showpage2() {
