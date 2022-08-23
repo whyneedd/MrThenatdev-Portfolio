@@ -557,6 +557,11 @@ a {
   z-index: 2;
 }
 
+@media screen and (max-width: 871px) {
+  .cookie {
+    right: 5px;
+  }
+}
 /* ======= NAV HUMBGER =======*/
 .nav__humbger {
   position: absolute;
