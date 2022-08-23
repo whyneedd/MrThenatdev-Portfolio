@@ -40,7 +40,12 @@ navHumbger.addEventListener("click", () => {
 })
 
 navHumbger.onclick = () => {
-    menu.classList.toggle("active")
+    menu.classList.toggle("active");
+}
+
+menu.onclick = () => {
+    menu.classList.remove("active");
+    navHumbger.classList.remove("active")
 }
 
 function SendMail() {
@@ -53,13 +58,13 @@ function SendMail() {
 
 
 
-window.addEventListener("load", test);
+window.addEventListener("load", loading);
 
-function test() {
+function loading() {
     setTimeout(show, 3500)
 }
 
 function show() {
     var ld = document.querySelector(".load")
-        ld.classList.add("active")
+    ld.classList.add("active")
 }
