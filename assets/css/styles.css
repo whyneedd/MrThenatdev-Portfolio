@@ -428,6 +428,12 @@ a {
   border-radius: 1.5rem;
   outline: none;
 }
+.contact__data #name {
+  padding: 15px;
+  border: none;
+  border-radius: 1.5rem;
+  outline: none;
+}
 .contact__data #desc {
   padding: 15px;
   width: 100%;
