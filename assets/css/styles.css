@@ -68,6 +68,7 @@ a {
   font-size: 2rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  font-family: "Righteous", sans-serif;
   color: var(--second-main-color);
 }
 
@@ -538,13 +539,16 @@ a {
   border: none;
   outline: none;
   color: white;
+  font-family: "Righteous", sans-serif;
   border-radius: 1.5rem;
   cursor: pointer;
   background: #1c1e2a;
-  transition: 0.3s;
+  transition: all 0.3s;
 }
 .cookie__btn:hover {
   transform: translateY(-5%);
+  background: #b9b6b6;
+  color: #000;
 }
 
 .cookie.active {
