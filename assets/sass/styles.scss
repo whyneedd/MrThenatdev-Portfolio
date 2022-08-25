@@ -438,7 +438,7 @@ a {
         display: grid;
         grid-auto-flow: column;
         gap: 1.5rem;
-        padding: 15px;
+        padding: 20px;
         overflow: auto;
         max-width: 1030px;
     }
@@ -479,6 +479,14 @@ a {
     &__btn:hover {
         background: #b6b9b9;
         color: #000;
+    }
+    @media screen and (max-width: 600px) {
+        &__container {
+            padding: 8px;
+        }
+        &__row {
+            padding: 10px;
+        }
     }
 }
 
