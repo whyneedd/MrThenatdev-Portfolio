@@ -312,8 +312,10 @@ a {
 }
 .skills__grid {
   display: grid;
-  gap: 1.5rem 2.5rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: column;
+  gap: 1.5rem 1.5rem;
+  overflow: auto;
+  width: 520px;
 }
 .skills__card {
   position: relative;
@@ -404,6 +406,59 @@ a {
   .work__container {
     padding: 20px;
   }
+}
+
+/* ======= TEMPLATE =======*/
+.template__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.template__row {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.5rem;
+  padding: 15px;
+  overflow: auto;
+  max-width: 1030px;
+}
+.template__card {
+  position: relative;
+  display: block;
+  padding: 25px;
+  width: 320px;
+  height: 295px;
+  border-radius: 0.75rem;
+  background: #313446;
+}
+.template__data {
+  text-align: center;
+}
+.template__data h2 {
+  font-family: "Righteous", sans-serif;
+}
+.template__data p {
+  padding: 15px 15px 0;
+}
+.template__btn {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 50%;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 600;
+  transform: translateX(-50%);
+  width: 180px;
+  padding: 10px 50px;
+  border-radius: 1.5rem;
+  background: #1c1e2a;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.template__btn:hover {
+  background: #b6b9b9;
+  color: #000;
 }
 
 /* ======= CONTACT =======*/
