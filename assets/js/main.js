@@ -18,10 +18,10 @@ var language = navigator.language || navigator.userLanguage;
 language = language.substring( 0, 2 );
 
 if (language == "fr"){  
-window.location.href = "../../pages/fr/index.html";  // French
+window.location.href = "fr/index.html";  // French
 }
 else {  
-window.location.href = "../../pages/en/index.html";  // everyone else : English
+window.location.href ="en/index.html";  // everyone else : English
 }
 
 var cookieModal = document.querySelector(".cookie")
