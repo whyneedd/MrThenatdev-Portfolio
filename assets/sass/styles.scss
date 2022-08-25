@@ -129,7 +129,7 @@ a {
     }
     @keyframes load {
         0% {
-            transform: translateY(-34px);
+            transform: translateY(-34px) scale(.75);
         }
         100% {
             transform: translateY(0px);
@@ -263,25 +263,18 @@ a {
     position: relative;
     padding: 7rem 0 5rem;
     &__data {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
         font-size: 27px;
         color: var(--second-main-color);
         width: 470px;
     }
-    &__img {
-        position: absolute;
-        top: -120px;
-        right: -123px;
-        width: 650px;
-    }
-    &__blob {
-        fill: #313446;
-    }
-    &__blob-img {
-        width: 160px;
-    }
     &__btn {
         display: block;
         margin-top: 10px;
+        margin-left: 50%;
+        transform: translateX(-50%);
         padding: 15px 56px;
         border: none;
         outline: none;

@@ -131,7 +131,7 @@ a {
 }
 @keyframes load {
   0% {
-    transform: translateY(-34px);
+    transform: translateY(-34px) scale(0.75);
   }
   100% {
     transform: translateY(0px);
@@ -254,25 +254,18 @@ a {
   padding: 7rem 0 5rem;
 }
 .home__data {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   font-size: 27px;
   color: var(--second-main-color);
   width: 470px;
 }
-.home__img {
-  position: absolute;
-  top: -120px;
-  right: -123px;
-  width: 650px;
-}
-.home__blob {
-  fill: #313446;
-}
-.home__blob-img {
-  width: 160px;
-}
 .home__btn {
   display: block;
   margin-top: 10px;
+  margin-left: 50%;
+  transform: translateX(-50%);
   padding: 15px 56px;
   border: none;
   outline: none;
