@@ -56,8 +56,6 @@ function SendMail() {
     window.location.href = link;
 }
 
-
-
 window.addEventListener("load", loading);
 
 function loading() {
