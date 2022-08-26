@@ -13,18 +13,6 @@ function navbar() {
 }
 navbar();
 
-var language = navigator.language || navigator.userLanguage; 
-
-language = language.substring( 0, 2 );
-
-if (language == "fr"){  
-window.location.href = "fr/index.html";  // French
-}
-else {  
-window.location.href ="en/index.html";  // everyone else : English
-}
-
-
 var cookieModal = document.querySelector(".cookie")
 var cancelCookieBtn = document.querySelector(".btn-cancel")
 var acceptCookieBtn = document.querySelector(".btn-accept")
