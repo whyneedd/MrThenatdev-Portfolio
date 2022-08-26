@@ -24,6 +24,7 @@ else {
 window.location.href ="en/index.html";  // everyone else : English
 }
 
+
 var cookieModal = document.querySelector(".cookie")
 var cancelCookieBtn = document.querySelector(".btn-cancel")
 var acceptCookieBtn = document.querySelector(".btn-accept")
