@@ -445,19 +445,15 @@ a {
   margin-left: 50%;
   border: none;
   outline: none;
-  color: #fff;
+  color: #000;
   font-weight: 600;
   transform: translateX(-50%);
   width: 180px;
   padding: 10px 50px;
   border-radius: 1.5rem;
-  background: #292a33;
+  background: #fff;
   cursor: pointer;
   transition: all 0.3s;
-}
-.template__btn:hover {
-  background: #b6b9b9;
-  color: #000;
 }
 @media screen and (max-width: 600px) {
   .template__container {
@@ -513,8 +509,8 @@ a {
   font-weight: 600;
   border-radius: 1.5rem;
   cursor: pointer;
-  color: #fff;
-  background: #292a33;
+  color: #000;
+  background: white;
   transition: 0.3s;
 }
 .contact__data #submit:hover {
@@ -570,16 +566,16 @@ a {
 /* ======= COOKIE =======*/
 .cookie {
   position: fixed;
-  display: block;
-  max-width: 480px;
+  display: flex;
+  width: 340px;
   background: #1a1f3a;
-  right: 2.5rem;
   bottom: -100%;
+  margin-left: 70%;
   opacity: 0;
   z-index: -2;
   padding: 60px;
   border-radius: 0.75rem;
-  box-shadow: 0 1px 35px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 35px rgba(0, 0, 0, 0.2);
   transition: bottom 0.8s, opacity 0.8s;
 }
 .cookie__img img {
@@ -604,11 +600,11 @@ a {
   padding: 8px;
   border: none;
   outline: none;
-  color: white;
+  color: #000;
   font-family: "Righteous", sans-serif;
   border-radius: 1.5rem;
   cursor: pointer;
-  background: #1c1e2a;
+  background: #fff;
   transition: all 0.3s;
 }
 .cookie__btn:hover {
@@ -625,7 +621,8 @@ a {
 
 @media screen and (max-width: 871px) {
   .cookie {
-    right: 0.3rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 }
 /* ======= NAV HUMBGER =======*/

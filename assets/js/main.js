@@ -66,3 +66,10 @@ function show() {
     var ld = document.querySelector(".load")
     ld.classList.add("active")
 }
+
+var typed = new Typed(".auto-type", {
+    strings: ["Coding", "Web Development", "My Passion", "Designer Freelance"],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
+})
