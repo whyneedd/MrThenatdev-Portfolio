@@ -62,6 +62,10 @@ function loading() {
     setTimeout(show, 3500)
 }
 
+function btnScrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 function show() {
     var ld = document.querySelector(".load")
     ld.classList.add("active")
