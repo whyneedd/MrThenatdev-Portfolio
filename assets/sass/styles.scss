@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    background: #0B111E;
+    background: #0b111e;
 }
 
 img {
@@ -129,7 +129,7 @@ a {
     }
     @keyframes load {
         0% {
-            transform: translateY(-34px) scale(.75);
+            transform: translateY(-34px) scale(0.75);
         }
         100% {
             transform: translateY(0px);
@@ -304,9 +304,10 @@ a {
     &__data {
         color: #fff;
         text-align: center;
-        max-width: 370px;
+        max-width: 340px;
         margin-left: auto;
         margin-right: auto;
+        font-size: 20px;
         font-weight: 600;
     }
     @media screen and (max-width: 600px) {
@@ -447,7 +448,7 @@ a {
         padding: 25px;
         width: 320px;
         height: 295px;
-        border-radius: .75rem;
+        border-radius: 0.75rem;
         background: #1a1f3a;
     }
     &__data {
@@ -457,7 +458,7 @@ a {
         font-family: "Righteous", sans-serif;
     }
     &__data p {
-        padding: 15px 15px 0; 
+        padding: 15px 15px 0;
     }
     &__btn {
         position: relative;
@@ -473,7 +474,7 @@ a {
         border-radius: 1.5rem;
         background: #fff;
         cursor: pointer;
-        transition: all .3s;
+        transition: all 0.3s;
     }
     @media screen and (max-width: 600px) {
         &__container {
@@ -502,6 +503,12 @@ a {
         grid-template-columns: repeat(1, 1fr);
     }
     &__data #email {
+        padding: 15px;
+        border: none;
+        border-radius: 1.5rem;
+        outline: none;
+    }
+    &__data #file {
         padding: 15px;
         border: none;
         border-radius: 1.5rem;
@@ -541,6 +548,51 @@ a {
     }
 }
 
+/* ======= FAQ =======*/
+.faq {
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__contentBox {
+        position: relative;
+        margin: 15px 25px 15px;
+    }
+    &__label {
+        position: relative;
+        display: block;
+        border-radius: 0.75rem;
+        padding: 20px;
+        transition: 0.5s;
+        background: #f1f1f1;
+    }
+    &__contentBox.active &__label {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    &__toggle-panel {
+        position: relative;
+        height: 0;
+        border-radius: 0.75rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        background: #f1f1f1;
+        transition: 0.5s;
+        overflow: hidden;
+        overflow-y: auto;
+    }
+    &__toggle-panel p {
+        color: #000;
+        text-align: start;
+    }
+    &__contentBox.active &__toggle-panel {
+        height: 150px;
+        padding: 10px;
+    }
+}
 /* ======= FOOTER =======*/
 .footer {
     padding: 70px 0;
@@ -647,8 +699,8 @@ a {
 
 @media screen and (max-width: 871px) {
     .cookie {
-       margin-left: 50%;
-       transform: translateX(-50%);
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 }
 

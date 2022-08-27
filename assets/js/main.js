@@ -71,5 +71,13 @@ var typed = new Typed(".auto-type", {
     strings: ["Coding", "Web Development", "My Passion", "Designer Freelance"],
     typeSpeed: 150,
     backSpeed: 150,
-    loop: true
+    loop: false
 })
+
+var panelVisible = document.getElementsByClassName("faq__contentBox");
+
+for (i = 0; i < panelVisible.length; i++) {
+    panelVisible[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+    })
+}
