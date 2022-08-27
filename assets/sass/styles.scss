@@ -108,7 +108,7 @@ a {
     z-index: 100;
     clip-path: circle(75%);
     background: var(--second-color);
-    transition: opacity 1s;
+    transition: opacity 1s, background .5s;
     &__center {
         position: absolute;
         top: 50%;
@@ -119,6 +119,7 @@ a {
         position: relative;
         display: inline-block;
         font-size: 25px;
+        color: var(--primary-color);
         font-weight: 600;
     }
 }
