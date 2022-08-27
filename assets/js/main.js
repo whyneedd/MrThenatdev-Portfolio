@@ -27,7 +27,7 @@ acceptCookieBtn.addEventListener("click", function () {
 
 setTimeout(function () {
     let cookieAccepted = localStorage.getItem("cookieAccepted")
-    if (cookieAccepted = "yes") {
+    if (cookieAccepted !== "yes") {
         cookieModal.classList.remove("active")
     }
 }, 2000)

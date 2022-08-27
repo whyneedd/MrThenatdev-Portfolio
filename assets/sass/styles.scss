@@ -202,6 +202,7 @@ a {
     }
     .nav__link i {
         font-size: 20px;
+        color:  rgb(97, 125, 255);
         margin-left: 0.25rem;
     }
     .nav__darkmode {
@@ -212,6 +213,7 @@ a {
         height: 35px;
         width: 35px;
         cursor: pointer;
+        color:  rgb(97, 125, 255);
         color: var(--primary-color); 
         border-radius: .25rem;
         font-size: 20px;
@@ -219,7 +221,7 @@ a {
         border: 2px solid var(--primary-color);
     }
     .nav__darkmode:hover {
-        background: red;
+        background: var(--second-s-color);
     }
 }
 
@@ -268,6 +270,9 @@ a {
         padding: 20px;
         width: 670px;
     }
+    &__data span {
+        color:  rgb(97, 125, 255);
+    }
     &__btn {
         display: flex;
         margin-top: 10px;
@@ -284,8 +289,8 @@ a {
         background: transparent;
     }
     &__btn:hover {
-        color: #fff;
-        background: #0b1110;
+        color: var(--second-color);
+        background: var(--primary-color);
     }
 
     @media screen and (max-width: 600px) {
@@ -335,7 +340,7 @@ a {
         left: 0;
         height: 6px;
         border-radius: 0.75rem;
-        background: #b9b6b6;
+        background: rgb(97, 125, 255);
     }
     &__git {
         width: 52%;
@@ -551,7 +556,8 @@ a {
     opacity: 0;
     font-size: 2.5rem;
     border-radius: 2rem;
-    background: #fff;
+    color: #fff;
+    background: rgb(97, 125, 255);
     box-shadow: 0 1px 16px rgb(0, 0, 0, 0.2);
     transition: right 0.5s, opacity 0.5s;
     animation-name: btnScrollToTop;
