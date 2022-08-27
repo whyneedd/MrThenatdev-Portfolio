@@ -108,30 +108,34 @@ btnDarkMode.addEventListener("click", function () {
     }
 })
 
-btnDarkMode.addEventListener("click", function () {
-    document.body.classList.toggle("dark-theme");
-    localStorage.setItem("selected-theme", "dark")
-})
 
-btnDarkMode.addEventListener("click", function () {
+
+const activedarkmode = () => {
+    document.body.classList.add("dark-theme");
+    localStorage.setItem("selectedtheme", "dark");
+    
+};
+
+const desactivedarkmode = () => {
     document.body.classList.remove("dark-theme");
-    localStorage.setItem("selected-theme", "light")
-})
+    localStorage.setItem("selectedtheme", null);
+    
+};
 
-setTimeout(function() {
-    let themeget = localStorage.getItem("selected-theme")
-    if (themeget = "dark" || btnDarkModeIcon.classList.contains("bx-sun")) {
-        document.body.classList.add("dark-theme");
-        btnDarkModeIcon.classList.replace("bx-sun", "bx-moon")
+let selectedtheme = localStorage.getItem("selectedtheme");
 
-    } 
-    if (themeget = "light" || btnDarkModeIcon.classList.contains("bx-sun")) {
-        document.body.classList.remove("dark-theme");
-        btnDarkModeIcon.classList.replace("bx-moon", "bx-sun")
+if (selectedtheme === "dark") {
+    activedarkmode();
+}
 
+btnDarkMode.addEventListener("click", () => {
+    selectedtheme = localStorage.getItem("selectedtheme");
+    if (selectedtheme !== "dark") {
+        activedarkmode();
+    } else {
+        desactivedarkmode();
     }
-}, 2000)
-
+})
 
 var typed2 = new Typed(".load__typed", {
     strings: ["Hi", "Welcome !"],
