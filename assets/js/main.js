@@ -92,7 +92,22 @@ var typed = new Typed(".auto-type", {
 var panelVisible = document.getElementsByClassName("faq__contentBox");
 
 for (i = 0; i < panelVisible.length; i++) {
-    panelVisible[i].addEventListener("click", function() {
+    panelVisible[i].addEventListener("click", function () {
         this.classList.toggle("active");
     })
 }
+
+var btnDarkMode = document.querySelector(".nav-links");
+var btnDarkModeIcon = btnDarkMode.querySelector(".bx-sun");
+
+btnDarkMode.addEventListener("click", function () {
+    if (btnDarkModeIcon.classList.contains("bx-sun")) {
+        btnDarkModeIcon.classList.replace("bx-sun", "bx-moon")
+    } else {
+        btnDarkModeIcon.classList.replace("bx-moon", "bx-sun")
+    }
+})
+
+btnDarkMode.addEventListener("click", function () {
+    document.body.classList.toggle("dark-theme");
+})

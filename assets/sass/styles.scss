@@ -17,17 +17,27 @@
     box-sizing: border-box;
 }
 
-:root {
-    --main-color: #1c1e2a;
-    --second-main-color: #fff;
-    --main-color-bg: #061db4;
-}
 html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --primary-color: #000;
+        --primary-s-color: rgb(0, 0, 0, .2);
+        --primary-m-color: #f1f1f1;
+    --second-color: #fff;
+}
+
 body {
-    background: #ffff;
+    background: var(--second-color);
+    transition: .5s;
+}
+
+.dark-theme {
+    --primary-color: #ffff;
+    --primary-s-color: rgb(255, 255, 255, .2);
+    --primary-m-color: #121412;
+    --second-color: #121412;
 }
 
 img {
@@ -40,7 +50,7 @@ h1,
 h2,
 p {
     margin: 0;
-    color: #000;
+    color: var(--primary-color);
 }
 
 ul {
@@ -97,7 +107,7 @@ a {
     opacity: 1;
     z-index: 100;
     clip-path: circle(75%);
-    background: #f1f1f1;
+    background: var(--second-color);
     transition: opacity 1s;
     &__center {
         position: absolute;
@@ -115,7 +125,7 @@ a {
         width: 35px;
         height: 35px;
         border-radius: 1.5rem;
-        background: #0b1110;
+        background: var(--primary-color);
         transition: 0.3s;
         animation-name: load;
         animation-duration: 0.8s;
@@ -181,7 +191,7 @@ a {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: #ffff;
+    background: var(--second-color);
     box-shadow: 0 1px 5px rgb(0, 0, 0, 0.45);
     transition: top 0.3s;
 }
@@ -191,10 +201,10 @@ a {
 }
 
 .header {
-    .logo {
+    .logo h2 {
         position: relative;
         display: flex;
-        color: var(--second-main-color);
+        color: var(--primary-color);
         font-size: 1.5rem;
     }
 }
@@ -212,7 +222,7 @@ a {
         align-items: center;
         text-transform: uppercase;
         font-weight: 600;
-        color: #000;
+        color: var(--primary-color);
         transition: 0.3s;
     }
     .nav__link:hover {
@@ -276,7 +286,8 @@ a {
         align-items: center;
         font-size: 16px;
         padding: 13px 45px;
-        border: 2px solid #0b1110;
+        color: var(--primary-color);
+        border: 2px solid var(--primary-color);
         outline: none;
         font-weight: 600;
         border-radius: 2rem;
@@ -318,13 +329,14 @@ a {
         max-width: 450px;
         padding: 20px;
         border-radius: 0.75rem;
-        background: #ffff;
-        box-shadow: 0 4px 15px rgb(0, 0, 0, 0.2);
+        background: var(--second-color);
+        box-shadow: 0 4px 15px var(--primary-s-color);
     }
     &__data {
         display: flex;
         justify-content: space-between;
         align-content: center;
+        color: var(--primary-color);
         padding: 0.5rem 6rem;
         position: relative;
     }
@@ -388,8 +400,10 @@ a {
         gap: 1.5rem;
         grid-template-columns: repeat(1, 1fr);
     }
-    &__data input {
-        box-shadow: 0 1px 15px rgb(0, 0, 0, 0.2);
+    &__data input, textarea {
+        background: var(--second-color);
+        color: var(--primary-color);
+        box-shadow: 0 1px 15px var(--primary-s-color);
     }
     &__data #email {
         padding: 15px;
@@ -414,7 +428,6 @@ a {
         width: 100%;
         resize: none;
         border: none;
-        box-shadow: 0 1px 15px rgb(0, 0, 0, 0.2);
         border-radius: 1.5rem;
         outline: none;
     }
@@ -428,8 +441,8 @@ a {
         font-weight: 600;
         border-radius: 1.5rem;
         cursor: pointer;
-        color: #000;
-        background: #ffff;
+        color: var(--primary-color);
+        background: var(--second-color);
         transition: 0.3s;
     }
 
@@ -458,8 +471,9 @@ a {
         border-radius: 0.75rem;
         padding: 20px;
         transition: 0.5s;
-        background: #fff;
-        box-shadow: 0 1px 15px rgb(0, 0, 0, 0.2);
+        color: var(--primary-color);
+        background: var(--second-color);
+        box-shadow: 0 1px 15px var(--primary-s-color);
     }
     &__contentBox.active &__label {
         border-bottom-left-radius: 0;
@@ -471,13 +485,13 @@ a {
         border-radius: 0.75rem;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-        background: #fff;
+        background: var(--second-color);
         transition: 0.5s;
         overflow: hidden;
         overflow-y: auto;
     }
     &__toggle-panel p {
-        color: #000;
+        color: var(--primary-color);
         text-align: start;
     }
     &__contentBox.active &__toggle-panel {
@@ -489,7 +503,7 @@ a {
 /* ======= FOOTER =======*/
 .footer {
     padding: 70px 0;
-    background: #f1f1f1;
+    background: var(--primary-m-color);
     &__container {
         position: relative;
         max-width: 350px;
@@ -512,7 +526,7 @@ a {
     &__social &__item &__icon {
         display: block;
         font-size: 25px;
-        color: #000;
+        color: var(--primary-color);
         transition: 0.3s;
     }
 
