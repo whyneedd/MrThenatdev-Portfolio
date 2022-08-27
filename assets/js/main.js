@@ -97,7 +97,7 @@ for (i = 0; i < panelVisible.length; i++) {
     })
 }
 
-var btnDarkMode = document.querySelector(".nav-links");
+var btnDarkMode = document.querySelector(".nav__darkmode");
 var btnDarkModeIcon = btnDarkMode.querySelector(".bx-sun");
 
 btnDarkMode.addEventListener("click", function () {

@@ -233,6 +233,20 @@ a {
         font-size: 20px;
         margin-left: 0.25rem;
     }
+    .nav__darkmode {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 35px;
+        width: 35px;
+        cursor: pointer;
+        color: var(--primary-color); 
+        border-radius: .25rem;
+        font-size: 20px;
+        background: transparent;
+        border: 2px solid var(--primary-color);
+    }
 }
 
 @media screen and (max-width: 962px) {
