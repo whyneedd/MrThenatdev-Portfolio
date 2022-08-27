@@ -219,9 +219,11 @@ a {
         font-size: 20px;
         background: transparent;
         border: 2px solid var(--primary-color);
+        transition: .3s;
     }
     .nav__darkmode:hover {
-        background: var(--second-s-color);
+        background: rgb(97, 125, 255);
+        border: 2px solid rgb(97, 125, 255);
     }
 }
 
@@ -290,7 +292,8 @@ a {
     }
     &__btn:hover {
         color: var(--second-color);
-        background: var(--primary-color);
+        background: rgb(97, 125, 255);
+        border: 2px solid rgb(97, 125, 255);
     }
 
     @media screen and (max-width: 600px) {
@@ -416,7 +419,7 @@ a {
         border-radius: 1.5rem;
         outline: none;
     }
-    &__data #desc {
+    &__data #message {
         padding: 15px;
         width: 100%;
         resize: none;

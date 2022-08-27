@@ -1,37 +1,3 @@
-AOS.init();
-
-var navMenu = document.querySelector(".js-header");
-
-function navbar() {
-    window.addEventListener("scroll", () => {
-        if (this.scrollY > 0) {
-            navMenu.classList.add("activeMenu");
-        } else {
-            navMenu.classList.remove("activeMenu");
-        }
-    })
-}
-navbar();
-
-var cookieModal = document.querySelector(".cookie")
-var cancelCookieBtn = document.querySelector(".btn-cancel")
-var acceptCookieBtn = document.querySelector(".btn-accept")
-
-cancelCookieBtn.addEventListener("click", function () {
-    cookieModal.classList.remove("active")
-})
-acceptCookieBtn.addEventListener("click", function () {
-    cookieModal.classList.remove("active")
-    localStorage.setItem("cookieAccepted", "yes")
-})
-
-setTimeout(function () {
-    let cookieAccepted = localStorage.getItem("cookieAccepted")
-    if (cookieAccepted !== "yes") {
-        cookieModal.classList.remove("active")
-    }
-}, 2000)
-
 var navHumbger = document.querySelector(".nav__humbger");
 var menu = document.querySelector(".nav__list");
 
@@ -51,7 +17,7 @@ menu.onclick = () => {
 function SendMail() {
     var link = "mailto:azalee4l@hotmail.com?subject=Nouveaux messages de "
         + document.getElementById("email").value
-        + "&body=" + document.getElementById("desc").value;
+        + "&body=" + document.getElementById("message").value;
 
     window.location.href = link;
 }
@@ -62,21 +28,6 @@ function loading() {
     setTimeout(show, 4700)
 }
 
-function ScrollToTop() {
-    window.addEventListener("scroll", () => {
-        if (this.scrollY > 0) {
-            document.querySelector(".btnScrollToTop").classList.add("active");
-        } else {
-            document.querySelector(".btnScrollToTop").classList.remove("active");
-        }
-    })
-}
-ScrollToTop();
-
-function btnScrollToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
 function show() {
     var ld = document.querySelector(".load")
     ld.classList.add("active")

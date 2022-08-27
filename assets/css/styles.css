@@ -213,9 +213,11 @@ a {
   font-size: 20px;
   background: transparent;
   border: 2px solid var(--primary-color);
+  transition: 0.3s;
 }
 .nav__item .nav__darkmode:hover {
-  background: var(--second-s-color);
+  background: rgb(97, 125, 255);
+  border: 2px solid rgb(97, 125, 255);
 }
 
 @media screen and (max-width: 962px) {
@@ -280,7 +282,8 @@ a {
 }
 .home__btn:hover {
   color: var(--second-color);
-  background: var(--primary-color);
+  background: rgb(97, 125, 255);
+  border: 2px solid rgb(97, 125, 255);
 }
 @media screen and (max-width: 600px) {
   .home__data {
@@ -400,7 +403,7 @@ a {
   border-radius: 1.5rem;
   outline: none;
 }
-.contact__data #desc {
+.contact__data #message {
   padding: 15px;
   width: 100%;
   resize: none;

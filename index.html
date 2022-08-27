@@ -33,6 +33,10 @@
 
     <!-- ===== Js ===== -->
     <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/navbar.js" defer></script>
+    <script src="assets/js/aos.js" defer></script>
+    <script src="assets/js/cookie.js" defer></script>
+    <script src="assets/js/btnscrolltop.js" defer></script>
 
     <!-- ===== Box Icons ===== -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet' />
@@ -40,6 +44,8 @@
     <!-- ===== Animation ===== -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.12/lib/typed.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 
     <title>Zorax- Portfolio</title>
 </head>
@@ -190,8 +196,8 @@
                     <form method="post">
                         <input type="name" name="" id="name" placeholder="Your name" required>
                         <input type="email" name="" id="email" placeholder="Your email" required>
-                        <textarea name="" id="desc" cols="50" rows="5" placeholder="Your message" required></textarea>
-                        <input type="submit" id="submit" value="Send" onclick="SendMail();  reset(); return false;">
+                        <textarea name="" id="message" cols="50" rows="5" placeholder="Your message" required></textarea>
+                        <input type="submit" id="submit" value="Send" onclick="SendMail();">
                     </form>
                 </div>
             </div>
