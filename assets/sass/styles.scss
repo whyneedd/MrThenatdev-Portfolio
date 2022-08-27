@@ -594,14 +594,14 @@ a {
     position: fixed;
     display: flex;
     width: 340px;
-    background: #fff;
+    background: var(--second-color);
     bottom: -100%;
     margin-left: 70%;
     opacity: 0;
     z-index: -2;
     padding: 60px;
     border-radius: 0.75rem;
-    box-shadow: 0 1px 35px rgb(0, 0, 0, 0.2);
+    box-shadow: 0 1px 35px var(--primary-s-color);
     transition: bottom 0.8s, opacity 0.8s;
     &__img img {
         margin-bottom: 2rem;
@@ -625,11 +625,11 @@ a {
         padding: 8px;
         border: none;
         outline: none;
-        color: #ffff;
+        color: var(--second-color);
         font-weight: 600;
         border-radius: 1.5rem;
         cursor: pointer;
-        background: #0b1110;
+        background: var(--primary-color);
         transition: all 0.3s;
     }
     &__btn:hover {
@@ -680,7 +680,7 @@ a {
         height: 5px;
         margin: 6px 0;
         border-radius: 0.75rem;
-        background: #000;
+        background: var(--primary-color);
         transition: 0.3s ease-in-out;
     }
 
