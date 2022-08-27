@@ -86,7 +86,7 @@ var typed = new Typed(".auto-type", {
     strings: ["Coding", "a Dev", "A Designer", "a Freelancer"],
     typeSpeed: 150,
     backSpeed: 150,
-    loop: false
+    loop: true
 })
 
 var panelVisible = document.getElementsByClassName("faq__contentBox");
