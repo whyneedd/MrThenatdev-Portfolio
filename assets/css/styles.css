@@ -528,13 +528,14 @@ a {
 .faq__container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  max-width: 650px;
+  max-width: 680px;
   margin-left: auto;
   margin-right: auto;
 }
 .faq__contentBox {
   position: relative;
   margin: 15px 25px 15px;
+  cursor: pointer;
 }
 .faq__label {
   position: relative;
@@ -565,7 +566,7 @@ a {
 }
 .faq__contentBox.active .faq__toggle-panel {
   height: 150px;
-  padding: 10px;
+  padding: 20px;
 }
 
 /* ======= FOOTER =======*/

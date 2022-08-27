@@ -553,13 +553,14 @@ a {
     &__container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        max-width: 650px;
+        max-width: 680px;
         margin-left: auto;
         margin-right: auto;
     }
     &__contentBox {
         position: relative;
         margin: 15px 25px 15px;
+        cursor: pointer;
     }
     &__label {
         position: relative;
@@ -590,7 +591,7 @@ a {
     }
     &__contentBox.active &__toggle-panel {
         height: 150px;
-        padding: 10px;
+        padding: 20px;
     }
 }
 /* ======= FOOTER =======*/
