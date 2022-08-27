@@ -59,7 +59,7 @@ function SendMail() {
 window.addEventListener("load", loading);
 
 function loading() {
-    setTimeout(show, 3500)
+    setTimeout(show, 4700)
 }
 
 function ScrollToTop() {
@@ -110,4 +110,11 @@ btnDarkMode.addEventListener("click", function () {
 
 btnDarkMode.addEventListener("click", function () {
     document.body.classList.toggle("dark-theme");
+})
+
+var typed2 = new Typed(".load__typed", {
+    strings: ["Hi", "Welcome !"],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true
 })
