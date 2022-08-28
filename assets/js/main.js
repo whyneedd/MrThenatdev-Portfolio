@@ -14,14 +14,6 @@ menu.onclick = () => {
     navHumbger.classList.remove("active")
 }
 
-function SendMail() {
-    var link = "mailto:azalee4l@hotmail.com?subject=Nouveaux messages de "
-        + document.getElementById("email").value
-        + "&body=" + document.getElementById("message").value;
-
-    window.location.href = link;
-}
-
 window.addEventListener("load", loading);
 
 function loading() {
@@ -49,13 +41,13 @@ for (i = 0; i < panelVisible.length; i++) {
 }
 
 var btnDarkMode = document.querySelector(".nav__darkmode");
-var btnDarkModeIcon = btnDarkMode.querySelector(".bx-sun");
+var btnDarkModeIcon = btnDarkMode.querySelector(".bx-moon");
 
 btnDarkMode.addEventListener("click", function () {
-    if (btnDarkModeIcon.classList.contains("bx-sun")) {
-        btnDarkModeIcon.classList.replace("bx-sun", "bx-moon")
-    } else {
+    if (btnDarkModeIcon.classList.contains("bx-moon")) {
         btnDarkModeIcon.classList.replace("bx-moon", "bx-sun")
+    } else {
+        btnDarkModeIcon.classList.replace("bx-sun", "bx-moon")
     }
 })
 
@@ -63,24 +55,24 @@ btnDarkMode.addEventListener("click", function () {
 
 const activedarkmode = () => {
     document.body.classList.add("dark-theme");
-    localStorage.setItem("selectedtheme", "dark");
+    localStorage.setItem("selected-theme", "dark");
     
 };
 
 const desactivedarkmode = () => {
     document.body.classList.remove("dark-theme");
-    localStorage.setItem("selectedtheme", null);
+    localStorage.setItem("selected-theme", null);
     
 };
 
-let selectedtheme = localStorage.getItem("selectedtheme");
+let selectedtheme = localStorage.getItem("selected-theme");
 
 if (selectedtheme === "dark") {
     activedarkmode();
 }
 
 btnDarkMode.addEventListener("click", () => {
-    selectedtheme = localStorage.getItem("selectedtheme");
+    selectedtheme = localStorage.getItem("selected-theme");
     if (selectedtheme !== "dark") {
         activedarkmode();
     } else {

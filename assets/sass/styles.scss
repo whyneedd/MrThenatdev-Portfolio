@@ -243,7 +243,7 @@ a {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background: rgb(255, 255, 255, .35);
+        background: var(--primary-s-color);
         backdrop-filter: blur(12px);
         top: 0;
         right: -100%;
@@ -486,7 +486,7 @@ a {
         border-radius: 1.5rem;
         cursor: pointer;
         color: var(--primary-color);
-        background: var(--second-color);
+        background: rgb(97, 125, 255);
         transition: 0.3s;
     }
 
@@ -674,7 +674,7 @@ a {
         font-weight: 600;
         border-radius: 1.5rem;
         cursor: pointer;
-        background: var(--primary-color);
+        background: rgb(97, 125, 255);
         transition: all 0.3s;
     }
     &__btn:hover {
