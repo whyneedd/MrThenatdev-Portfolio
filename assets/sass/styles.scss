@@ -297,8 +297,8 @@ a {
         justify-content: center;
         align-items: center;
         border-radius: 2rem;
-        background: rgb(97, 125, 255);
-        color: rgb(97, 125, 255);
+        background: #fff;
+        color: #fff;
         box-shadow: 0 1px 15px rgb(0, 0, 0, .2);
         transition: .3s;
     }
@@ -314,7 +314,7 @@ a {
         height: 27px;
         z-index: -1;
         border-radius: .75rem;
-        background: #fff;
+        background: rgb(97, 125, 255);
     } 
     &__social li a:hover {
         color: #000;
