@@ -265,9 +265,29 @@ a {
 .home__data span {
   color: rgb(97, 125, 255);
 }
+.home__social {
+  position: absolute;
+  display: block;
+  left: -8%;
+  top: 40%;
+  color: #fff;
+}
+.home__social li {
+  display: block;
+  margin-bottom: 25px;
+}
+.home__social li a {
+  display: block;
+  font-size: 25px;
+  color: rgb(97, 125, 255);
+  transition: 0.3s;
+}
+.home__social li a:hover {
+  color: var(--primary-color);
+}
 .home__btn {
   display: flex;
-  margin-top: 10px;
+  margin-top: 25px;
   align-items: center;
   font-size: 16px;
   padding: 13px 45px;
@@ -292,6 +312,14 @@ a {
   }
   .home__btn {
     width: 160px;
+  }
+  .home__social {
+    left: 8%;
+    top: 90%;
+  }
+  .home__social li {
+    display: inline-block;
+    margin-left: 25px;
   }
 }
 

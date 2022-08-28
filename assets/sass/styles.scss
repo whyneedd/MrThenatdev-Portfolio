@@ -275,9 +275,29 @@ a {
     &__data span {
         color:  rgb(97, 125, 255);
     }
+    &__social {
+        position: absolute;
+        display: block;
+        left: -8%;
+        top: 40%;
+        color: #fff;
+    }
+    &__social li {
+        display: block;
+        margin-bottom: 25px;
+    }
+    &__social li a {
+        display: block;
+        font-size: 25px;
+        color: rgb(97, 125, 255);
+        transition: .3s;
+    }
+    &__social li a:hover {
+        color: var(--primary-color);
+    }
     &__btn {
         display: flex;
-        margin-top: 10px;
+        margin-top: 25px;
         align-items: center;
         font-size: 16px;
         padding: 13px 45px;
@@ -303,6 +323,14 @@ a {
         }
         &__btn {
             width: 160px;
+        }
+        &__social {
+            left: 8%;
+            top: 90%;
+        }
+        &__social li {
+            display: inline-block;
+            margin-left: 25px;
         }
     }
 }
