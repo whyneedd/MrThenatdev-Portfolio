@@ -107,7 +107,6 @@ a {
   top: 0;
   opacity: 1;
   z-index: 100;
-  clip-path: circle(75%);
   background: var(--second-color);
   transition: opacity 1s, background 0.5s;
 }
@@ -121,6 +120,7 @@ a {
   position: relative;
   display: inline-block;
   font-size: 25px;
+  text-shadow: 0 1px 15px rgb(0, 0, 0);
   color: var(--primary-color);
   font-weight: 600;
 }
@@ -132,7 +132,7 @@ a {
 
 /* ======= Navbar =======*/
 .container {
-  max-width: 1150px;
+  max-width: 1170px;
   margin: auto;
   padding: 15px 0;
 }
@@ -197,7 +197,7 @@ a {
 .nav__item .nav__link i {
   font-size: 20px;
   color: rgb(97, 125, 255);
-  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 .nav__item .nav__darkmode {
   display: flex;
@@ -254,7 +254,7 @@ a {
 /* ======= HOME =======*/
 .home {
   position: relative;
-  padding: 7rem 0 5rem;
+  padding: 4rem 0 5rem;
 }
 .home__data {
   align-items: flex-start;
