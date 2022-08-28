@@ -279,10 +279,9 @@ a {
 .home__social li a {
   position: relative;
   display: flex;
-  font-size: 25px;
-  width: 35px;
-  height: 35px;
-  padding: 8px;
+  font-size: 20px;
+  width: 38px;
+  height: 38px;
   z-index: 2;
   justify-content: center;
   align-items: center;
@@ -292,19 +291,16 @@ a {
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
-.home__social li a i {
-  margin: 0;
-}
 .home__social li a::before {
   content: "";
   position: absolute;
   display: block;
   margin: auto;
-  width: 27px;
-  height: 27px;
+  width: 30px;
+  height: 30px;
   z-index: -1;
-  border-radius: 0.75rem;
-  background: rgb(97, 125, 255);
+  border-radius: 1rem;
+  background: #000;
 }
 .home__social li a:hover {
   color: #000;
