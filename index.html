@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta property="og:image" content="https://zorax-dev.github.io/Zorax-Personal/assets/img/logo2.png" />
-    <meta property="og:title" content="Zorax-dev" />
-    <meta property="og:site_name" content="Jordan art" />
+    <meta property="og:title" content="Zorax" />
+    <meta property="og:site_name" content="Jordan Aricat" />
     <meta property="og:url" content="https://www.zorax.ml/" />
     <meta property="og:description"
         content="A passionate Full Stack Software Developer 🚀 with experience in building web applications with JavaScript / Nodejs and some other cool libraries and frameworks." />
@@ -37,6 +37,7 @@
     <script src="assets/js/aos.js" defer></script>
     <script src="assets/js/cookie.js" defer></script>
     <script src="assets/js/btnscrolltop.js" defer></script>
+    <script src="assets/js/darkmode.js" defer></script>
 
     <!-- ===== Icons ===== -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet' />
@@ -48,7 +49,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.12/lib/typed.js"></script>
 
-    <title>Zorax- Portfolio</title>
+    <title>Zorax - Portfolio</title>
 </head>
 
 <body>
@@ -70,16 +71,25 @@
             </div>
             <nav class="nav__menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#Home" class="nav__link"><i class='bx bx-home'></i> Home</a></li>
-                    <li class="nav__item"><a href="#Skills" class="nav__link"><i class='bx bx-stats'></i> Skills</a>
+                    <li class="nav__item">
+                        <a href="#Home" class="nav__link"><i class='bx bx-home'></i> Home</a>
                     </li>
-                    <li class="nav__item"><a href="https://discord.gg/6p3QyuNgxZ" class="nav__link"><i
-                                class='bx bx-user'></i> Discord</a></li>
-                    <li class="nav__item"><a href="#Contact" class="nav__link"><i class='bx bx-folder'></i> Contact</a>
+                    <li class="nav__item">
+                        <a href="#Skills" class="nav__link"><i class='bx bx-stats'></i> Skills</a>
                     </li>
-                    <li class="nav__item"><a href="https://github.com/zorax-dev/" class="nav__link"><i
-                                class="fa-brands fa-github-alt"></i> Github</a></li>
-                    <li class="nav__item"><button class="nav__darkmode"><i class='bx bx-moon'></i></button></li>
+                    <li class="nav__item">
+                        <a href="https://discord.gg/6p3QyuNgxZ" class="nav__link"><i class='bx bx-user'></i> Discord</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#Contact" class="nav__link"><i class='bx bx-folder'></i> Contact</a>
+                    </li>
+                    <li class="nav__item"><a href="https://github.com/zorax-dev/" class="nav__link">
+                            <iclass="fa-brands fa-github-alt"></i> Github
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <button class="nav__darkmode"><i class='bx bx-moon'></i></button>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -98,14 +108,22 @@
                     software,
                     web, and mobile products. I'm passionate about applying consumer psychology for an interaction
                     science-backed approach.</p>
-                    <div class="home__social">
-                        <ul>
-                            <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
-                            <li><a href="#"><i class="bx bxl-discord-alt"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-github-alt"></i></a></li>
-                        </ul>
-                    </div>
+                <div class="home__social">
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/jordannart"><i class="bx bxl-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/jordannart"><i class="fa-solid fa-mug-saucer"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/6p3QyuNgxZ"><i class="bx bxl-discord-alt"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/zorax-dev"><i class="fa-brands fa-github-alt"></i></a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="home__boxBtn">
                     <button class="home__btn" onclick="location.href='https://www.instagram.com/jordaann.at'"
                         type="button">
@@ -207,7 +225,7 @@
         <div class="contact" data-aos="fade-right">
             <div class="contact__container">
                 <div class="contact__data">
-                    <form method="post" action="mailto: jordan2offshel@hotmail.com">
+                    <form method="get" action="mailto: jordan2offshel@hotmail.com">
                         <input type="name" name="" id="name" placeholder="Your name" required>
                         <input type="email" name="" id="email" placeholder="Your email" required>
                         <textarea name="" id="message" cols="50" rows="5" placeholder="Your message"
@@ -295,7 +313,7 @@
                             </li>
                             <li class="footer__item">
                                 <a href="http://www.buymeacoffee.com/Zoraxdev" class="footer__icon"> <i
-                                        class='bx bx-coffee-togo'></i></a>
+                                        class='fa-brands fa-mug-saucer'></i></a>
                             </li>
                         </ul>
                     </div>
