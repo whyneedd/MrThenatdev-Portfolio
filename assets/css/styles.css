@@ -23,7 +23,7 @@ html {
 
 :root {
   --primary-color: #000;
-  --primary-s-color: rgb(0, 0, 0, .2);
+  --primary-s-color: rgb(0, 0, 0, 0.2);
   --primary-m-color: #f1f1f1;
   --second-color: #fff;
 }
@@ -35,7 +35,7 @@ body {
 
 .dark-theme {
   --primary-color: #ffff;
-  --primary-s-color: rgb(255, 255, 255, .2);
+  --primary-s-color: rgb(255, 255, 255, 0.2);
   --primary-m-color: #121412;
   --second-color: #121412;
 }
@@ -279,9 +279,9 @@ a {
 .home__social li a {
   position: relative;
   display: flex;
-  font-size: 20px;
-  width: 38px;
-  height: 38px;
+  font-size: 18px;
+  width: 42px;
+  height: 42px;
   z-index: 2;
   justify-content: center;
   align-items: center;
@@ -296,8 +296,8 @@ a {
   position: absolute;
   display: block;
   margin: auto;
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   z-index: -1;
   border-radius: 1rem;
   background: #000;
@@ -428,7 +428,8 @@ a {
   gap: 1.5rem;
   grid-template-columns: repeat(1, 1fr);
 }
-.contact__data input, .contact textarea {
+.contact__data input,
+.contact textarea {
   background: var(--second-color);
   color: var(--primary-color);
   box-shadow: 0 1px 15px var(--primary-s-color);
@@ -621,7 +622,7 @@ a {
   bottom: -100%;
   margin-left: 70%;
   opacity: 0;
-  z-index: -2;
+  pointer-events: none;
   padding: 60px;
   border-radius: 0.75rem;
   box-shadow: 0 1px 35px var(--primary-s-color);
@@ -666,6 +667,7 @@ a {
   bottom: 2.5rem;
   opacity: 1;
   z-index: 2;
+  pointer-events: auto;
 }
 
 @media screen and (max-width: 871px) {

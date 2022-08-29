@@ -52,7 +52,7 @@ btnDarkMode.addEventListener("click", function () {
 })
 
 var typed2 = new Typed(".load__typed", {
-    strings: ["Hi", "Welcome !"],
+    strings: ["Hi 👋 ", "Welcome !"],
     typeSpeed: 150,
     backSpeed: 150,
     loop: true

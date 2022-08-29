@@ -289,9 +289,9 @@ a {
     &__social li a {
         position: relative;
         display: flex;
-        font-size: 20px;
-        width: 38px;
-        height: 38px;
+        font-size: 18px;
+        width: 42px;
+        height: 42px;
         z-index: 2;
         justify-content: center;
         align-items: center;
@@ -306,8 +306,8 @@ a {
         position: absolute;
         display: block;
         margin: auto;
-        width: 30px;
-        height: 30px;
+        width: 34px;
+        height: 34px;
         z-index: -1;
         border-radius: 1rem;
         background: #000;
@@ -644,7 +644,7 @@ a {
     bottom: -100%;
     margin-left: 70%;
     opacity: 0;
-    z-index: -2;
+    pointer-events: none;
     padding: 60px;
     border-radius: 0.75rem;
     box-shadow: 0 1px 35px var(--primary-s-color);
@@ -689,6 +689,7 @@ a {
     bottom: 2.5rem;
     opacity: 1;
     z-index: 2;
+    pointer-events: auto;
 }
 
 @media screen and (max-width: 871px) {
