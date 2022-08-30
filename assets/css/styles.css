@@ -46,6 +46,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  margin: 0;
 }
 
 h1,
@@ -94,8 +95,7 @@ a {
   display: grid;
   gap: 1rem;
   max-width: 1017px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 /* ==== ANIMATION LOADING ===== */
