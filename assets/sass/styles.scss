@@ -519,6 +519,7 @@ a {
         border-radius: 0.75rem;
         padding: 20px;
         transition: 0.5s;
+        z-index: 2;
         color: var(--primary-color);
         background: var(--second-color);
         box-shadow: 0 1px 15px var(--primary-s-color);
@@ -530,10 +531,12 @@ a {
     &__toggle-panel {
         position: relative;
         height: 0;
+        z-index: -1;
         border-radius: 0.75rem;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         background: var(--second-color);
+        box-shadow: 0 1px 15px var(--primary-s-color);
         transition: 0.5s;
         overflow: hidden;
         overflow-y: auto;
