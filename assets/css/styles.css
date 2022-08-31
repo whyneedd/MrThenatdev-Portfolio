@@ -691,7 +691,7 @@ a {
   left: 50%;
   bottom: 40px;
   transform: translateX(-50%);
-  z-index: 40;
+  z-index: -50;
   height: 90px;
   text-align: center;
   color: white;
