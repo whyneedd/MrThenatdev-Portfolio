@@ -681,6 +681,33 @@ a {
     transform: translateX(-50%);
   }
 }
+/* ======= Updbox =======*/
+.updBox {
+  display: block;
+  position: fixed;
+  width: 740px;
+  padding: 20px 70px 25px;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  z-index: 40;
+  height: 90px;
+  text-align: center;
+  color: white;
+  background: rgb(97, 125, 255);
+  border-radius: 0.75rem;
+}
+.updBox h2, .updBox p {
+  color: #fff;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 750px) {
+  .updBox {
+    width: 330px;
+    height: 120px;
+  }
+}
 /* ======= NAV HUMBGER =======*/
 .nav__humbger {
   position: absolute;
