@@ -1,4 +1,4 @@
-var coutnow = new Date("Sept 5, 2022 00: 00:00").getTime();
+var coutnow = new Date("Sept 7, 2022 00: 00:00").getTime();
 
 var x = setInterval(function () {
   var now = new Date().getTime();
