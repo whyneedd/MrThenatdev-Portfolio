@@ -432,10 +432,10 @@ a {
   justify-content: center;
   align-items: center;
   font-size: 54px;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
-  color: #000;
+  color: var(--primary-color);
   animation-name: scrollBottom;
   animation-duration: 0.8s;
   animation-iteration-count: infinite;
