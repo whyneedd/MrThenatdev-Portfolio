@@ -24,7 +24,7 @@ html {
 }
 
 :root {
-  --primary-color: #000;
+  --primary-color: rgb(0, 0, 0);
   --primary-s-color: rgb(0, 0, 0, 0.2);
   --primary-m-color: #f1f1f1;
   --second-color: #fff;
@@ -38,8 +38,8 @@ body {
 .dark-theme {
   --primary-color: #ffff;
   --primary-s-color: rgb(255, 255, 255, 0.2);
-  --primary-m-color: #121412;
-  --second-color: #121412;
+  --primary-m-color: rgb(50, 15, 95);
+  --second-color: rgb(38, 32, 46);
 }
 
 img {
@@ -91,6 +91,10 @@ a {
   margin: 0.25rem 0 0.25rem;
 }
 
+.purpel {
+  color: rgb(148, 79, 237);
+}
+
 .bd-grid {
   display: grid;
   gap: 1rem;
@@ -118,15 +122,44 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.load__typed {
-  position: relative;
-  display: inline-block;
-  font-size: 25px;
-  text-shadow: 0 1px 15px rgb(0, 0, 0);
-  color: var(--primary-color);
-  font-weight: 600;
+.load__container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.load__box {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 2rem;
+  background: rgb(148, 79, 237);
+  animation-name: load;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.load__box:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.load__box:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.load__box:nth-child(3) {
+  animation-delay: 0.3s;
 }
 
+@keyframes load {
+  0% {
+    transform: scale(0.85);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.85);
+  }
+}
 .load.active {
   opacity: 0;
   z-index: -1;
@@ -134,7 +167,7 @@ a {
 
 /* ======= Navbar =======*/
 .container {
-  max-width: 1170px;
+  max-width: 1120px;
   margin: auto;
   padding: 15px 0;
 }
@@ -175,8 +208,9 @@ a {
 .header .logo h2 {
   position: relative;
   display: flex;
+  cursor: pointer;
   color: var(--primary-color);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .nav__menu .nav__item {
@@ -192,14 +226,17 @@ a {
   color: var(--primary-color);
   transition: 0.3s;
 }
+.nav__item .nav__link.active {
+  color: rgb(148, 79, 237);
+}
 .nav__item .nav__link:hover {
   letter-spacing: 0.15em;
   color: #1c1e2a;
 }
 .nav__item .nav__link i {
   font-size: 20px;
-  color: rgb(97, 125, 255);
-  margin-right: 0.25rem;
+  color: rgb(148, 79, 237);
+  margin-right: 0.45rem;
 }
 .nav__item .nav__darkmode {
   display: flex;
@@ -209,12 +246,11 @@ a {
   height: 35px;
   width: 35px;
   cursor: pointer;
-  color: rgb(97, 125, 255);
-  color: var(--primary-color);
+  color: rgb(148, 79, 237);
   border-radius: 0.25rem;
   font-size: 20px;
   background: transparent;
-  border: 2px solid var(--primary-color);
+  border: none;
   transition: 0.3s;
 }
 .nav__item .nav__darkmode:hover {
@@ -264,8 +300,11 @@ a {
   padding: 20px;
   width: 670px;
 }
+.home__data h2 {
+  font-size: 2.5rem;
+}
 .home__data span {
-  color: rgb(97, 125, 255);
+  color: rgb(148, 79, 237);
 }
 .home__social {
   position: absolute;
@@ -281,37 +320,44 @@ a {
 .home__social li a {
   position: relative;
   display: flex;
-  font-size: 18px;
+  font-size: 27px;
   width: 42px;
   height: 42px;
   z-index: 2;
   justify-content: center;
   align-items: center;
   border-radius: 2rem;
-  background: #fff;
-  color: #fff;
-  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
+  color: var(--primary-color);
   transition: 0.3s;
 }
 .home__social li a::before {
   content: "";
   position: absolute;
   display: block;
-  margin: auto;
-  width: 34px;
-  height: 34px;
+  width: 100%;
+  height: 0;
+  bottom: 0;
   z-index: -1;
-  border-radius: 1rem;
-  background: #000;
+  border-radius: 1.5rem;
+  background: rgb(148, 79, 237);
+  transition: 0.4s;
 }
-.home__social li a:hover {
-  color: #000;
+.home__social li a:hover::before {
+  height: 100%;
+}
+.home__img {
+  position: absolute;
+  bottom: 170px;
+  right: 0;
+  width: 360px;
 }
 .home__btn {
+  position: relative;
   display: flex;
   margin-top: 25px;
   align-items: center;
-  font-size: 16px;
+  justify-content: center;
+  font-size: 17px;
   padding: 13px 45px;
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
@@ -320,17 +366,40 @@ a {
   border-radius: 2rem;
   cursor: pointer;
   transition: 0.3s;
+  z-index: 2;
+  overflow: hidden;
   background: transparent;
 }
-.home__btn:hover {
+.home__btn::before {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
   color: var(--second-color);
-  background: rgb(97, 125, 255);
-  border: 2px solid rgb(97, 125, 255);
+  background: rgb(148, 79, 237);
+  transition: 0.4s;
+}
+.home__btn:hover::before {
+  height: 100%;
+}
+.home__btn:hover {
+  border: 2px solid rgb(148, 79, 237);
 }
 @media screen and (max-width: 600px) {
   .home__data {
     font-size: 18px;
     width: auto;
+  }
+  .home__data h2 {
+    font-size: 1.5rem;
+  }
+  .home__img {
+    bottom: -170px;
+    width: 230px;
+    right: 80px;
   }
   .home__btn {
     width: 160px;
@@ -343,8 +412,66 @@ a {
     display: inline-block;
     margin-left: 25px;
   }
+  .home__btn {
+    width: 170px;
+  }
 }
 
+.scrollbotom {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+}
+.scrollbotom__button {
+  position: relative;
+  display: flex;
+  border: none;
+  outline: none;
+  background: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 54px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  color: #000;
+  animation-name: scrollBottom;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+.scrollbotom__button::before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 0%;
+  border-radius: 2rem;
+  background: rgb(148, 79, 237);
+  transition: 0.4s;
+}
+.scrollbotom__button:hover::before {
+  height: 100%;
+}
+@media screen and (max-width: 750px) {
+  .scrollbotom {
+    bottom: -200px;
+  }
+}
+
+@keyframes scrollBottom {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(8px);
+  }
+}
 /* ======= SKILLS =======*/
 .skills__container {
   display: flex;
@@ -355,7 +482,7 @@ a {
 .skills__grid {
   display: grid;
   gap: 1.5rem 2rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 .skills__card {
   position: relative;
@@ -432,33 +559,44 @@ a {
 }
 .contact__data input,
 .contact textarea {
-  background: var(--second-color);
+  border: none;
+  color: #fff;
+  background: transparent;
+  padding: 0;
+}
+.contact label {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 5px;
   color: var(--primary-color);
-  box-shadow: 0 1px 15px var(--primary-s-color);
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.contact__label-box {
+  position: relative;
 }
 .contact__data #email {
   padding: 15px;
-  border: none;
-  border-radius: 1.5rem;
-  outline: none;
-}
-.contact__data #file {
-  padding: 15px;
-  border: none;
-  border-radius: 1.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  width: 100%;
   outline: none;
 }
 .contact__data #name {
   padding: 15px;
-  border: none;
-  border-radius: 1.5rem;
+  border-bottom: 2px solid var(--primary-color);
+  width: 100%;
   outline: none;
+}
+.contact__data input:focus ~ label, .contact__data input:valid ~ label {
+  top: -5px;
 }
 .contact__data #message {
   padding: 15px;
   width: 100%;
   resize: none;
   border: none;
+  box-shadow: 0 1px 15px var(--primary-s-color);
   border-radius: 1.5rem;
   outline: none;
 }
@@ -473,7 +611,7 @@ a {
   border-radius: 1.5rem;
   cursor: pointer;
   color: var(--primary-color);
-  background: rgb(97, 125, 255);
+  background: rgb(148, 79, 237);
   transition: 0.3s;
 }
 .contact__data #submit:hover {
@@ -533,7 +671,7 @@ a {
 /* ======= FOOTER =======*/
 .footer {
   padding: 70px 0;
-  background: var(--primary-m-color);
+  background: var(--second-color);
 }
 .footer__container {
   position: relative;
@@ -592,11 +730,11 @@ a {
   font-size: 2.5rem;
   border-radius: 2rem;
   color: #fff;
-  background: rgb(97, 125, 255);
+  background: rgb(148, 79, 237);
   box-shadow: 0 1px 16px rgba(0, 0, 0, 0.2);
   transition: right 0.5s, opacity 0.5s;
   animation-name: btnScrollToTop;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -612,7 +750,7 @@ a {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-16px);
+    transform: translateY(-5px);
   }
   100% {
     transform: translateY(0);
@@ -660,7 +798,7 @@ a {
   font-weight: 600;
   border-radius: 1.5rem;
   cursor: pointer;
-  background: rgb(97, 125, 255);
+  background: rgb(148, 79, 237);
   transition: all 0.3s;
 }
 .cookie__btn:hover {
@@ -697,7 +835,8 @@ a {
   background: rgb(97, 125, 255);
   border-radius: 0.75rem;
 }
-.updBox h2, .updBox p {
+.updBox h2,
+.updBox p {
   color: #fff;
   font-weight: 600;
 }

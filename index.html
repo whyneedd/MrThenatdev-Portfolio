@@ -47,13 +47,15 @@
     <script src="assets/js/cookie.js" defer></script>
     <script src="assets/js/btnscrolltop.js" defer></script>
     <script src="assets/js/darkmode.js" defer></script>
-    <script src="assets/js/countdown.js" defer></script>
+    <script src="assets/js/navlinkremoveactive.js" defer></script>
 
     <!-- ===== Icons ===== -->
+    <!-- boxicons -->
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- font-awesome  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -66,7 +68,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.12/lib/typed.js"></script>
 
-    <title>Zorax - Portfolio</title>
+    <title>Zetrox - Portfolio</title>
   </head>
 
   <body>
@@ -74,7 +76,9 @@
     <div class="load">
       <div class="load__center">
         <div class="load__container">
-          <span class="load__typed"></span>
+          <div class="load__box"></div>
+          <div class="load__box"></div>
+          <div class="load__box"></div>
         </div>
       </div>
     </div>
@@ -83,17 +87,17 @@
     <header class="header js-header">
       <div class="container">
         <div class="logo">
-          <h2>Zorax</h2>
+          <h2 onclick="window.location.href='https://zorax.ml'">mr<span class="purpel">.</span> zetrox</h2>
         </div>
         <nav class="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#Home" class="nav__link"
-                ><i class="bx bx-home"></i> Home</a
+              <a href="#Home" class="nav__link active"
+                ><i class="bx bx-home-alt-2"></i> Home</a
               >
             </li>
             <li class="nav__item">
-              <a href="#Skills" target="_bank" class="nav__link"
+              <a href="#Skills" class="nav__link"
                 ><i class="bx bx-stats"></i> Skills</a
               >
             </li>
@@ -112,8 +116,7 @@
             </li>
             <li class="nav__item">
               <a
-                href="https://github.com/zorax-dev/"
-                target="_bank"
+                href="https://github.com/zetrox-dev/"
                 class="nav__link"
               >
                 <i class="fa-brands fa-github-alt"></i> Github
@@ -131,20 +134,26 @@
     </header>
 
     <!-- ===== HOME ===== -->
-    <section class="section" id="Home" data-aos="fade-up">
-      <div class="home bd-grid">
+    <section class="section" id="Home">
+      <div class="home bd-grid" data-aos="fade-up">
         <div class="home__data">
           <h2>
-            <span>Hi</span>👋, <br />
-            I am <span class="auto-type"></span>
+            <span>Hi,</span><br />
+            I am <span class="auto-type"></span>.
           </h2>
           <h3 class="gray mbg">FrontEnd & BackEnd Developer</h3>
           <p>
             I'm a digital product designer focusing on crafting user experiences
-            and design systems for software, web, and mobile products. I'm
+            and design systems for software, web products. I'm
             passionate about applying consumer psychology for an interaction
-            science-backed approach.
+            science-backed approach. I'm learning 
+            new programming languages and
+             I'm still doing everything
+              to the fullest!
           </p>
+          <div class="home__img">
+            <img src="assets/img/logo2.png" alt="">
+          </div>
           <div class="home__social">
             <ul>
               <li>
@@ -153,7 +162,7 @@
                 ></a>
               </li>
               <li>
-                <a href="http://www.buymeacoffee.com/Zoraxdev" target="_bank"
+                <a href="http://www.buymeacoffee.com/Zetroxdev" target="_bank"
                   ><i class="bx bxs-coffee-togo"></i
                 ></a>
               </li>
@@ -163,7 +172,7 @@
                 ></a>
               </li>
               <li>
-                <a href="https://github.com/zorax-dev" target="_bank"
+                <a href="https://github.com/zetrox-dev" target="_bank"
                   ><i class="fa-brands fa-github-alt"></i
                 ></a>
               </li>
@@ -173,21 +182,26 @@
             <button
               class="home__btn"
               target="_bank"
-              onclick="location.href='https://www.instagram.com/jordaann.at'"
+              onclick="location.href='https://www.instagram.com/jordannart'"
               type="button"
             >
-              Hire me
+              Hire me 
             </button>
+          </div>
+
+          <div class="scrollbotom">
+            <button class="scrollbotom__button"><i class='bx bx-chevron-down'></i></button>
           </div>
         </div>
       </div>
     </section>
 
+
     <!-- ===== SKILLS =====  -->
     <section class="section" id="Skills">
       <h2 class="section__title">Skills</h2>
 
-      <div class="skills" data-aos="fade-right">
+      <div class="skills" data-aos="fade-down">
         <div class="skills__container">
           <div class="skills__grid">
             <div class="skills__card">
@@ -262,24 +276,18 @@
     <section class="section" id="Contact">
       <h2 class="section__title">Contact</h2>
 
-      <div class="contact" data-aos="fade-right">
+      <div class="contact" data-aos="fade-down">
         <div class="contact__container">
           <div class="contact__data">
             <form method="get" action="mailto: jordan2offshel@hotmail.com">
-              <input
-                type="name"
-                name=""
-                id="name"
-                placeholder="Your name"
-                required
-              />
-              <input
-                type="email"
-                name=""
-                id="email"
-                placeholder="Your email"
-                required
-              />
+              <div class="contact__label-box">
+                <input type="name" name="" id="name" required />
+                <label> Username</label>
+              </div>
+              <div class="contact__label-box">
+                <input type="email" name="" id="email" required />
+                <label> Email</label>
+              </div>
               <textarea
                 name=""
                 id="message"
@@ -300,7 +308,7 @@
 
       <!-- ===== FAQ ===== -->
       <div class="faq">
-        <div class="faq__container">
+        <div class="faq__container" data-aos="fade-down">
           <div class="faq__contentBox">
             <h3 class="faq__label">
               1. Does the design of a website have an impact on SEO?
@@ -359,11 +367,11 @@
       <div class="footer__container">
         <div class="footer__column">
           <div class="footer__data">
-            <h2>Zorax</h2>
+            <h2>Zetrox</h2>
             <div class="footer__social">
               <ul>
                 <li class="footer__item">
-                  <a href="http://github.com/Zorax-dev" class="footer__icon">
+                  <a href="http://github.com/Zetrox-dev" class="footer__icon">
                     <i class="bx bxl-github"></i
                   ></a>
                 </li>
@@ -374,7 +382,7 @@
                 </li>
                 <li class="footer__item">
                   <a
-                    href="http://www.instagram.com/jordaann.at"
+                    href="http://www.instagram.com/jordannartt"
                     class="footer__icon"
                   >
                     <i class="bx bxl-instagram"></i
@@ -387,37 +395,18 @@
                 </li>
                 <li class="footer__item">
                   <a
-                    href="http://www.buymeacoffee.com/Zoraxdev"
+                    href="http://www.buymeacoffee.com/Zetroxdev"
                     class="footer__icon"
                     ><i class="bx bxs-coffee-togo"></i
                   ></a>
                 </li>
               </ul>
             </div>
-            <p>2022 &copy;All right reserved, developed by Zorax</p>
+            <p>2022 &copy;All right reserved, developed by Zetrox</p>
           </div>
         </div>
       </div>
     </footer>
-
-    <!-- ===== Update ===== -->
-    <div class="updBox">
-      <div>
-        <h2>Update</h2>
-      </div>
-      <div>
-         <p>
-          <span id="days"></span>
-          <span> Days,</span>
-          <span id="hours"></span>
-          <span> Hours,</span>
-          <span id="minutes"></span>
-          <span> Minutes,</span>
-          <span id="seconds"></span>
-          <span> Seconds</span>
-         </p>
-      </div>
-    </div>
 
     <!-- ===== COOKIE ===== -->
     <div class="cookie active">
