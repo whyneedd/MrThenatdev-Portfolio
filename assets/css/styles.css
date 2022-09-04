@@ -420,6 +420,14 @@ a {
   }
 }
 
+/* =======  Particles Js =======*/
+#particles-js2 {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: fixed;
+}
+
 #particles-js {
   width: 100%;
   height: 100vh;
@@ -427,11 +435,12 @@ a {
   position: fixed;
 }
 
+/* ======= Cursor Custom =======*/
 #cursor-js {
   position: absolute;
   display: block;
-  top: 50%;
-  left: 50%;
+  top: 10%;
+  left: 8%;
   transform: translate(-50%, -50%);
   width: 45px;
   height: 45px;
@@ -446,6 +455,7 @@ a {
   }
 }
 
+/* ======= Button Scroll Down =======*/
 .scrollbotom {
   position: absolute;
   left: 50%;
@@ -763,6 +773,7 @@ a {
   }
 }
 
+/* ======= Button Scroll To Top =======*/
 .btnScrollToTop {
   position: fixed;
   display: flex;
@@ -870,34 +881,6 @@ a {
   .cookie.show {
     margin-left: 50%;
     transform: translateX(-50%);
-  }
-}
-/* ======= Updbox =======*/
-.updBox {
-  display: block;
-  position: fixed;
-  width: 740px;
-  padding: 20px 70px 25px;
-  left: 50%;
-  bottom: 40px;
-  transform: translateX(-50%);
-  z-index: 10;
-  height: 90px;
-  text-align: center;
-  color: white;
-  background: rgb(97, 125, 255);
-  border-radius: 0.75rem;
-}
-.updBox h2,
-.updBox p {
-  color: #fff;
-  font-weight: 600;
-}
-
-@media screen and (max-width: 750px) {
-  .updBox {
-    width: 330px;
-    height: 120px;
   }
 }
 /* ======= NAV HUMBGER =======*/
