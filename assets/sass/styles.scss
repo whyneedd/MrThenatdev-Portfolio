@@ -341,6 +341,9 @@ a {
         color: var(--primary-color);
         transition: 0.3s;
     }
+    &__social li a:hover {
+        color: var(--second-color);
+    }
     &__social li a::before {
         content: "";
         position: absolute;
@@ -583,7 +586,7 @@ a {
     &__data input,
     textarea {
         border: none;
-        color: #fff;
+        color: var(--primary-color);
         background: transparent;
         padding: 0;
     }
@@ -620,6 +623,7 @@ a {
         width: 100%;
         resize: none;
         border: none;
+        background: var(--second-color);
         box-shadow: 0 1px 15px var(--primary-s-color);
         border-radius: 1.5rem;
         outline: none;
