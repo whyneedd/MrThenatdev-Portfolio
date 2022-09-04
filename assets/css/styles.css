@@ -11,6 +11,15 @@
   background: #000;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(148, 79, 237);
+  border-radius: 0.75rem;
+}
+
 *,
 ::before,
 ::after {
@@ -421,13 +430,6 @@ a {
 }
 
 /* =======  Particles Js =======*/
-#particles-js2 {
-  width: 100%;
-  height: 100vh;
-  z-index: -1;
-  position: fixed;
-}
-
 #particles-js {
   width: 100%;
   height: 100vh;
@@ -438,9 +440,6 @@ a {
 /* ======= Cursor Custom =======*/
 #cursor-js {
   position: absolute;
-  display: block;
-  top: 10%;
-  left: 8%;
   transform: translate(-50%, -50%);
   width: 45px;
   height: 45px;
