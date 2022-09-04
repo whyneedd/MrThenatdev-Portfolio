@@ -439,6 +439,24 @@ a {
     position: fixed;
 }
 
+#cursor-js {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    height: 45px;
+    z-index: 100;
+    pointer-events: none;
+    border-radius: 2rem;
+    background: rgb(148, 79, 237, .8);
+    // transition: .1s;
+    @media screen and (max-width: 750px) {
+        display: none;
+    }
+}
+
 .scrollbotom {
     position: absolute;
     left: 50%;

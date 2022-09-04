@@ -427,6 +427,25 @@ a {
   position: fixed;
 }
 
+#cursor-js {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45px;
+  height: 45px;
+  z-index: 100;
+  pointer-events: none;
+  border-radius: 2rem;
+  background: rgba(148, 79, 237, 0.8);
+}
+@media screen and (max-width: 750px) {
+  #cursor-js {
+    display: none;
+  }
+}
+
 .scrollbotom {
   position: absolute;
   left: 50%;
