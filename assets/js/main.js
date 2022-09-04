@@ -17,7 +17,7 @@ menu.onclick = () => {
 window.addEventListener("load", loading);
 
 function loading() {
-  setTimeout(show, 4700);
+  setTimeout(show, 2500);
 }
 
 function show() {

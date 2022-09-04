@@ -24,3 +24,7 @@ setTimeout(function () {
     }
 }, 2500);
 
+
+setTimeout(function() {
+    cookieModal.classList.add("show");
+}, 3500)
