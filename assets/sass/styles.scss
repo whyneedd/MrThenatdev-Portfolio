@@ -599,7 +599,6 @@ a {
   font-size: 25px;
   color: rgb(148, 79, 237);
  }
-
   @media screen and (max-width: 600px) {
     &__grid {
       grid-template-columns: repeat(1, 1fr);
