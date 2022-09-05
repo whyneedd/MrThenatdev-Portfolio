@@ -168,6 +168,7 @@ a {
     transform: scale(0.85);
   }
 }
+
 .load.active {
   opacity: 0;
   z-index: -1;
@@ -269,8 +270,7 @@ a {
     transition: 0.3s;
   }
   .nav__darkmode:hover {
-    background: rgb(97, 125, 255);
-    border: 2px solid rgb(97, 125, 255);
+    color: #1c1e2a;
   }
 }
 
