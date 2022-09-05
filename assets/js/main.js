@@ -51,4 +51,12 @@ btnDarkMode.addEventListener("click", function () {
   }
 });
 
+function SendMail() {
+  var mailtosend =
+    "mailto:jordan2offshel@hotmail.com?subject=New letter from " +
+    document.querySelector("#email").value +
+    "&body=" +
+    document.querySelector("#message").value;
 
+    window.location.href = mailtosend;
+}
