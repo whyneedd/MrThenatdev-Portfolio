@@ -1,5 +1,16 @@
 
 // Function dark mode
+var btnDarkMode = document.querySelector(".nav__darkmode");
+var btnDarkModeIcon = btnDarkMode.querySelector(".bx-moon");
+
+btnDarkMode.addEventListener("click", function () {
+  if (btnDarkModeIcon.classList.contains("bx-moon")) {
+    btnDarkModeIcon.classList.replace("bx-moon", "bx-sun");
+  } else {
+    btnDarkModeIcon.classList.replace("bx-sun", "bx-moon");
+  }
+});
+
 const activedarkmode = () => {
     document.body.classList.add("dark-theme");
     localStorage.setItem("selected-theme", "dark");

@@ -17,7 +17,7 @@ menu.onclick = () => {
 window.addEventListener("load", loading);
 
 function loading() {
-  setTimeout(show, 2500);
+  setTimeout(show, 1500);
 }
 
 function show() {
@@ -40,17 +40,6 @@ for (i = 0; i < panelVisible.length; i++) {
   });
 }
 
-var btnDarkMode = document.querySelector(".nav__darkmode");
-var btnDarkModeIcon = btnDarkMode.querySelector(".bx-moon");
-
-btnDarkMode.addEventListener("click", function () {
-  if (btnDarkModeIcon.classList.contains("bx-moon")) {
-    btnDarkModeIcon.classList.replace("bx-moon", "bx-sun");
-  } else {
-    btnDarkModeIcon.classList.replace("bx-sun", "bx-moon");
-  }
-});
-
 function SendMail() {
   var mailtosend =
     "mailto:jordan2offshel@hotmail.com?subject=New letter from " +
@@ -58,5 +47,14 @@ function SendMail() {
     "&body=" +
     document.querySelector("#message").value;
 
-    window.location.href = mailtosend;
+  window.location.href = mailtosend;
 }
+
+var tl = gsap.timeline({ ease: { defauts: "power1.out" } });
+
+setTimeout(function () {
+  tl.to(".home__data p", { opacity: 1, y: "0%", duration: 0.5, stagger: 0.25 });
+  tl.to(".home__btn", { opacity: 1, y: "0%", duration: 0.5, stagger: 0.25 });
+  tl.to(".home__social", { opacity: 1, x: "0%", duration: 0.5, stagger: 0.25 });
+  tl.to(".home__img", { opacity: 1, x: "0%", duration: 0.5, stagger: 0.25 });
+}, 1600);

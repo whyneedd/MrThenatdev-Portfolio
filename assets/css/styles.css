@@ -314,12 +314,18 @@ a {
 .home__data span {
   color: rgb(148, 79, 237);
 }
+.home__data p {
+  transform: translateY(-100%);
+  opacity: 0;
+}
 .home__social {
   position: absolute;
   display: block;
   left: -8%;
   top: 40%;
   color: #fff;
+  transform: translateX(-100%);
+  opacity: 0;
 }
 .home__social li {
   display: block;
@@ -361,6 +367,8 @@ a {
   bottom: 170px;
   right: 0;
   width: 360px;
+  transform: translateX(100%);
+  opacity: 0;
 }
 .home__btn {
   position: relative;
@@ -380,6 +388,8 @@ a {
   z-index: 2;
   overflow: hidden;
   background: transparent;
+  transform: translateY(100%);
+  opacity: 0;
 }
 .home__btn::before {
   content: "";
