@@ -301,7 +301,6 @@ a {
 .home {
   position: relative;
   padding: 4rem 0 5rem;
-  overflow: hidden;
 }
 .home__data {
   align-items: flex-start;
