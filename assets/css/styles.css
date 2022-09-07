@@ -42,6 +42,7 @@ html {
 body {
   background: var(--second-color);
   transition: 0.5s;
+  overflow: hidden;
 }
 
 .dark-theme {
