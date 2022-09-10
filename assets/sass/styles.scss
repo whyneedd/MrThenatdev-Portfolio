@@ -16,7 +16,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(148, 79, 237);
+  background: var(--main-color);
   border-radius: 0.75rem;
 }
 
@@ -37,6 +37,8 @@ html {
   --primary-s-color: rgb(0, 0, 0, 0.2);
   --primary-m-color: #f1f1f1;
   --second-color: #fff;
+  --main-color: rgb(114, 135, 211);
+
 }
 
 body {
@@ -46,9 +48,12 @@ body {
 
 .dark-theme {
   --primary-color: #ffff;
+  --second-color: rgb(18, 23, 43);
+
   --primary-s-color: rgb(255, 255, 255, 0.2);
-  --primary-m-color: rgb(50, 15, 95);
-  --second-color: rgb(38, 32, 46);
+  --primary-m-color: rgb(27, 42, 70);
+  
+  --main-color: rgb(114, 135, 211);
 }
 
 img {
@@ -100,8 +105,8 @@ a {
   margin: 0.25rem 0 0.25rem;
 }
 
-.purpel {
-  color: rgb(148, 79, 237);
+.purple {
+  color: var(--main-color);
 }
 
 .bd-grid {
@@ -144,7 +149,7 @@ a {
     height: 35px;
     margin: 0 8px;
     border-radius: 2rem;
-    background: rgb(148, 79, 237);
+    background: var(--main-color);
     animation-name: load;
     animation-duration: 0.8s;
     animation-timing-function: linear;
@@ -249,7 +254,7 @@ a {
     transition: 0.3s;
   }
   .nav__link.active {
-    color: rgb(148, 79, 237);
+    color: var(--main-color);
   }
   .nav__link:hover {
     letter-spacing: 0.15em;
@@ -257,7 +262,7 @@ a {
   }
   .nav__link i {
     font-size: 20px;
-    color: rgb(148, 79, 237);
+    color: var(--main-color);
     margin-right: 0.45rem;
   }
   .nav__darkmode {
@@ -268,7 +273,7 @@ a {
     height: 35px;
     width: 35px;
     cursor: pointer;
-    color: rgb(148, 79, 237);
+    color: var(--main-color);
     border-radius: 0.25rem;
     font-size: 20px;
     background: transparent;
@@ -329,7 +334,7 @@ a {
     font-size: 2.5rem;
   }
   &__data span {
-    color: rgb(148, 79, 237);
+    color: var(--main-color);
   }
   &__data p {
     transform: translateY(-100%);
@@ -374,7 +379,7 @@ a {
     bottom: 0;
     z-index: -1;
     border-radius: 1.5rem;
-    background: rgb(148, 79, 237);
+    background: var(--main-color);
     transition: 0.4s;
   }
   &__social li a:hover::before {
@@ -419,14 +424,14 @@ a {
     height: 0%;
     z-index: -1;
     color: var(--second-color);
-    background: rgb(148, 79, 237);
+    background: var(--main-color);
     transition: 0.4s;
   }
   &__btn:hover::before {
     height: 100%;
   }
   &__btn:hover {
-    border: 2px solid rgb(148, 79, 237);
+    border: 2px solid var(--main-color);
   }
   @media screen and (max-width: 600px) {
     &__data {
@@ -464,22 +469,6 @@ a {
   height: 100vh;
   z-index: -1;
   position: fixed;
-}
-
-/* ======= Cursor Custom =======*/
-#cursor-js {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  width: 45px;
-  height: 45px;
-  z-index: 100;
-  pointer-events: none;
-  border-radius: 2rem;
-  background: rgb(148, 79, 237, 0.8);
-  // transition: .1s;
-  @media screen and (max-width: 750px) {
-    display: none;
-  }
 }
 
 /* ======= Button Scroll Down =======*/
@@ -521,7 +510,7 @@ a {
     width: 100%;
     height: 0%;
     border-radius: 2rem;
-    background: rgb(148, 79, 237);
+    background: var(--main-color);
     transition: 0.4s;
   }
   &__button:hover::before {
@@ -615,7 +604,7 @@ a {
   display: flex;
   align-items: center;
   font-size: 25px;
-  color: rgb(148, 79, 237);
+  color: var(--main-color);
  }
   @media screen and (max-width: 600px) {
     &__grid {
@@ -703,64 +692,12 @@ a {
     border-radius: .75rem;
     cursor: pointer;
     color: var(--primary-color);
-    background: rgb(148, 79, 237);
+    background: var(--main-color);
     transition: 0.3s;
   }
 
   &__data #submit:hover {
     background: #49ad3e;
-  }
-}
-
-/* ======= FAQ =======*/
-.faq {
-  &__container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    max-width: 680px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  &__contentBox {
-    position: relative;
-    margin: 15px 25px 15px;
-    cursor: pointer;
-  }
-  &__label {
-    position: relative;
-    display: block;
-    border-radius: 0.75rem;
-    padding: 20px;
-    transition: 0.5s;
-    z-index: 1.5;
-    color: var(--primary-color);
-    background: var(--second-color);
-    box-shadow: 0 1px 15px var(--primary-s-color);
-  }
-  &__contentBox.active &__label {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  &__toggle-panel {
-    position: relative;
-    height: 0;
-    z-index: -1;
-    border-radius: 0.75rem;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    background: var(--second-color);
-    box-shadow: 0 1px 15px var(--primary-s-color);
-    transition: 0.5s;
-    overflow: hidden;
-    overflow-y: auto;
-  }
-  &__toggle-panel p {
-    color: var(--primary-color);
-    text-align: start;
-  }
-  &__contentBox.active &__toggle-panel {
-    height: 150px;
-    padding: 20px;
   }
 }
 
@@ -811,7 +748,7 @@ a {
     height: 0%;
     z-index: -1;
     border-radius: 2rem;
-    background: rgb(148, 79, 237);
+    background: var(--main-color);
     transition: 0.4s;
   }
   &__data &__item &__icon:hover::before {
@@ -841,7 +778,7 @@ a {
     z-index: -1;
     width: 100%;
     height: 0%;
-    background: rgb(148, 79, 237);  
+    background: var(--main-color);  
     transition: .4s;
 }
 
