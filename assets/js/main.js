@@ -17,10 +17,10 @@ menu.onclick = () => {
 window.addEventListener("load", loading);
 
 function loading() {
-  setTimeout(show, 1500);
+  setTimeout(showpage, 1500);
 }
 
-function show() {
+function showpage() {
   var ld = document.querySelector(".load");
   ld.classList.add("active");
 }
