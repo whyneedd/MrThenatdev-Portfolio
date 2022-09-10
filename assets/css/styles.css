@@ -143,7 +143,7 @@ a {
 .load__box {
   position: relative;
   display: inline-block;
-  width: 35px;
+  width: 25px;
   height: 35px;
   margin: 0 8px;
   border-radius: 2rem;
@@ -849,11 +849,11 @@ a {
   padding: 8px;
   border: none;
   outline: none;
-  color: var(--second-color);
   font-weight: 600;
   border-radius: 1.5rem;
+  color: var(--second-color);
+  background: var(--main-color);
   cursor: pointer;
-  background: rgb(148, 79, 237);
   transition: all 0.3s;
 }
 .cookie__btn:hover {
