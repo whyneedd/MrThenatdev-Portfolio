@@ -126,20 +126,24 @@ a {
   transition: opacity 1s, background 0.5s;
 }
 .load__center {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .load__container {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .load__box {
-  display: block;
+  position: relative;
+  display: inline-block;
   width: 35px;
   height: 35px;
+  margin: 0 8px;
   border-radius: 2rem;
   background: rgb(148, 79, 237);
   animation-name: load;
@@ -164,6 +168,7 @@ a {
   }
   50% {
     transform: scale(1);
+    height: 60px;
   }
   100% {
     transform: scale(0.85);
