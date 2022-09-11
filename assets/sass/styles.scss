@@ -641,6 +641,7 @@ a {
   }
   &__data input,
   textarea {
+    position: relative;
     border: none;
     color: var(--primary-color);
     background: transparent;
@@ -662,6 +663,7 @@ a {
     padding: 15px;
     border-bottom: 2px solid var(--primary-color);
     width: 100%;
+    z-index: 2;
     outline: none;
   }
   &__data #name {
@@ -674,6 +676,13 @@ a {
   &__data input:valid ~ label {
     top: -5px;
   }
+  &__data #email:focus{
+    border-bottom: 2px solid var(--main-color);
+  }
+  &__data #name:focus{
+    border-bottom: 2px solid var(--main-color);
+  }
+
   &__data #message {
     padding: 15px;
     width: 100%;

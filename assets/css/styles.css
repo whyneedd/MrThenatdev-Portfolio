@@ -622,6 +622,7 @@ a {
 }
 .contact__data input,
 .contact textarea {
+  position: relative;
   border: none;
   color: var(--primary-color);
   background: transparent;
@@ -643,6 +644,7 @@ a {
   padding: 15px;
   border-bottom: 2px solid var(--primary-color);
   width: 100%;
+  z-index: 2;
   outline: none;
 }
 .contact__data #name {
@@ -653,6 +655,12 @@ a {
 }
 .contact__data input:focus ~ label, .contact__data input:valid ~ label {
   top: -5px;
+}
+.contact__data #email:focus {
+  border-bottom: 2px solid var(--main-color);
+}
+.contact__data #name:focus {
+  border-bottom: 2px solid var(--main-color);
 }
 .contact__data #message {
   padding: 15px;
