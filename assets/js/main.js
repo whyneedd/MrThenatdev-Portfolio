@@ -55,6 +55,6 @@ var tl = gsap.timeline({ ease: { defauts: "power1.out" } });
 setTimeout(function () {
   tl.to(".home__data p", { opacity: 1, y: "0%", duration: 0.5, stagger: 0.25 });
   tl.to(".home__social", { opacity: 1, x: "0%", duration: 0.5, stagger: 0.25 });
-  tl.to(".home__img", { opacity: 1, x: "0%", duration: 0.5, stagger: 0.25 });
+  tl.to(".home__img .home__img-data", { opacity: 1, x: "0%", duration: 0.5, stagger: 0.25 });
   tl.to(".home__btn", { opacity: 1, y: "0%", duration: 0.5, stagger: 0.25 });
 }, 1600);

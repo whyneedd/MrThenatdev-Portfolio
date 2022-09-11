@@ -390,7 +390,10 @@ a {
     bottom: 170px;
     right: 0;
     width: 360px;
-    transform: translateX(100%);
+    overflow: hidden;
+  }
+  &__img img {
+    transform: translateX(110%);
     opacity: 0;
   }
   &__btn {
