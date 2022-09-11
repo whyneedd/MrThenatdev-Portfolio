@@ -7,7 +7,7 @@
 }
 
 *::selection {
-  color: #ffff;
+  color: var(--main-color);
   background: #000;
 }
 
