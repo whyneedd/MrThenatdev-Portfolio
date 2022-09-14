@@ -33,10 +33,10 @@ html {
 }
 
 :root {
-  --primary-color: rgb(0, 0, 0);
-  --primary-s-color: rgb(0, 0, 0, 0.2);
-  --primary-m-color: #f1f1f1;
-  --second-color: #fff;
+  --primary-color: #ffff;
+  --second-color: rgb(18, 23, 43);
+  --primary-s-color: rgb(255, 255, 255, 0.2);
+  --primary-m-color: rgb(27, 42, 70);
   --main-color: rgb(114, 135, 211);
 }
 
@@ -46,10 +46,10 @@ body {
 }
 
 .dark-theme {
-  --primary-color: #ffff;
-  --second-color: rgb(18, 23, 43);
-  --primary-s-color: rgb(255, 255, 255, 0.2);
-  --primary-m-color: rgb(27, 42, 70);
+  --primary-color: rgb(0, 0, 0);
+  --primary-s-color: rgb(0, 0, 0, 0.2);
+  --primary-m-color: #f1f1f1;
+  --second-color: #fff;
   --main-color: rgb(114, 135, 211);
 }
 
