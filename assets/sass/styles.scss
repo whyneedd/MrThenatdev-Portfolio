@@ -38,7 +38,6 @@ html {
   --primary-m-color: #f1f1f1;
   --second-color: #fff;
   --main-color: rgb(114, 135, 211);
-
 }
 
 body {
@@ -52,7 +51,7 @@ body {
 
   --primary-s-color: rgb(255, 255, 255, 0.2);
   --primary-m-color: rgb(27, 42, 70);
-  
+
   --main-color: rgb(114, 135, 211);
 }
 
@@ -571,13 +570,13 @@ a {
     width: 480px;
   }
   &__img img {
-    border-radius: .75rem;
+    border-radius: 0.75rem;
   }
   &__bar {
     position: absolute;
     left: 0;
     bottom: 0;
-    height: .25rem;
+    height: 0.25rem;
     border-radius: 0.75rem;
     background: rgb(97, 125, 255);
   }
@@ -590,19 +589,19 @@ a {
   &__js {
     width: 55%;
   }
- &__ux {
-  width: 85%;
- }
- &__card h2 {
-  position: relative;
-  font-size: 20px;
- }
- &__card h2 i {
-  display: flex;
-  align-items: center;
-  font-size: 25px;
-  color: var(--main-color);
- }
+  &__ux {
+    width: 85%;
+  }
+  &__card h2 {
+    position: relative;
+    font-size: 20px;
+  }
+  &__card h2 i {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: var(--main-color);
+  }
   @media screen and (max-width: 600px) {
     &__grid {
       grid-template-columns: repeat(1, 1fr);
@@ -670,10 +669,10 @@ a {
   &__data input:valid ~ label {
     top: -5px;
   }
-  &__data #email:focus{
+  &__data #email:focus {
     border-bottom: 2px solid var(--main-color);
   }
-  &__data #name:focus{
+  &__data #name:focus {
     border-bottom: 2px solid var(--main-color);
   }
 
@@ -684,7 +683,7 @@ a {
     border: none;
     background: var(--second-color);
     box-shadow: 0 1px 15px var(--primary-s-color);
-    border-radius: .75rem;
+    border-radius: 0.75rem;
     outline: none;
   }
   &__data #submit {
@@ -695,7 +694,7 @@ a {
     font-size: 15px;
     z-index: 2;
     font-weight: 600;
-    border-radius: .75rem;
+    border-radius: 0.75rem;
     cursor: pointer;
     color: var(--primary-color);
     background: var(--main-color);
@@ -776,16 +775,16 @@ a {
 
 /* ======= Button Scroll To Top =======*/
 .btnScrollToTop::before {
-    content: "";
-    position: absolute;
-    display: block;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 0%;
-    background: var(--main-color);  
-    transition: .4s;
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 0%;
+  background: var(--main-color);
+  transition: 0.4s;
 }
 
 .btnScrollToTop:hover::before {
@@ -815,7 +814,7 @@ a {
   border-radius: 2rem;
   color: #000;
   overflow: hidden;
-  transition: .4s;
+  transition: 0.4s;
   box-shadow: 0 1px 16px rgb(0, 0, 0, 0.2);
   transition: right 0.5s, opacity 0.5s;
   animation-name: btnScrollToTop;
