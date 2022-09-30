@@ -12,7 +12,7 @@ btnDarkMode.addEventListener("click", function () {
 
 const activedarkmode = () => {
   document.body.classList.add("dark-theme");
-  localStorage.setItem("selected-theme", "dark");
+  localStorage.setItem("selected-themeicon", "dark");
 };
 
 const desactivedarkmode = () => {
