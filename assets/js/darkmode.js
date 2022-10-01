@@ -12,7 +12,7 @@ btnDarkMode.addEventListener("click", function () {
 
 const activedarkmode = () => {
   document.body.classList.add("dark-theme");
-  localStorage.setItem("selected-themeicon", "dark");
+  localStorage.setItem("selected-theme", "dark");
 };
 
 const desactivedarkmode = () => {
@@ -28,11 +28,9 @@ if (selectedtheme === "dark") {
 
 btnDarkMode.addEventListener("click", () => {
   selectedtheme = localStorage.getItem("selected-theme");
-  setTimeout(function () {
     if (selectedtheme !== "dark") {
       activedarkmode();
     } else {
       desactivedarkmode();
     }
-  }, 200);
 });
