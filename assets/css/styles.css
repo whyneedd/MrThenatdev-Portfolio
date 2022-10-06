@@ -146,8 +146,8 @@ a {
 .load__box {
   position: relative;
   display: inline-block;
-  width: 54px;
-  height: 54px;
+  width: 25px;
+  height: 25px;
   margin: 0 8px;
   border-radius: 2rem;
   opacity: 0.8;
@@ -162,12 +162,15 @@ a {
 @keyframes load {
   0% {
     transform: translateX(-120px);
+    width: 25px;
   }
   50% {
     transform: translateX(-50%);
+    width: 175px;
   }
   100% {
     transform: translateX(120px);
+    width: 25px;
   }
 }
 .load.active {
@@ -186,7 +189,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 99;
   width: 100%;
   padding: 10px 0;
 }
@@ -461,66 +464,6 @@ a {
   position: fixed;
 }
 
-/* ======= Button Scroll Down =======*/
-.scrollbotom {
-  position: absolute;
-  left: 50%;
-  bottom: 0px;
-  transform: translateX(-50%);
-}
-.scrollbotom__button {
-  position: relative;
-  display: flex;
-  border: none;
-  outline: none;
-  background: none;
-  justify-content: center;
-  align-items: center;
-  font-size: 34px;
-  width: 25px;
-  height: 80px;
-  border-radius: 2rem;
-  border: 2px solid #fff;
-  padding: 20px;
-  cursor: pointer;
-  overflow: hidden;
-  color: var(--primary-color);
-  animation-name: scrollBottom;
-  animation-duration: 0.8s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-}
-.scrollbotom__button::before {
-  content: "";
-  position: absolute;
-  display: block;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 0%;
-  border-radius: 2rem;
-  background: var(--main-color);
-  transition: 0.4s;
-}
-.scrollbotom__button:hover::before {
-  height: 100%;
-}
-@media screen and (max-width: 750px) {
-  .scrollbotom {
-    bottom: -200px;
-  }
-}
-
-@keyframes scrollBottom {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(15px);
-  }
-}
 /* ======= SKILLS =======*/
 .skills__container {
   position: relative;
@@ -801,7 +744,7 @@ a {
   opacity: 0;
   z-index: 2;
   font-size: 2.5rem;
-  border-radius: 2rem;
+  border-radius: 0.75rem;
   color: #000;
   overflow: hidden;
   transition: 0.4s;
@@ -903,7 +846,7 @@ a {
   display: none;
   right: 1.5rem;
   top: 1.5rem;
-  z-index: 2;
+  z-index: 100;
   border: none;
   width: 38px;
   height: 38px;
