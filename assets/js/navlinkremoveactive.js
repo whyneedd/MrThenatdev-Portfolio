@@ -1,4 +1,4 @@
-var  navitem = document.querySelector(".nav__menu");
+var navitem = document.querySelector(".nav__menu");
 var navlink = document.querySelector(".nav__link");
 
 
