@@ -26,7 +26,7 @@ function showpage() {
 }
 
 var typed = new Typed(".auto-type", {
-  strings: ["a Thenat", "a Dev", "a Designer", "a Freelancer"],
+  strings: ["a Mrthenat", "a Dev", "a Designer", "a Freelancer"],
   typeSpeed: 150,
   backSpeed: 150,
   loop: true,
