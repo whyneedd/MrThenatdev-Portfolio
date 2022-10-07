@@ -181,6 +181,74 @@ a {
   z-index: -1;
 }
 
+/* ======= COOKIE =======*/
+.cookie {
+  position: fixed;
+  display: flex;
+  width: 340px;
+  background: var(--second-color);
+  bottom: -100%;
+  margin-left: 100%;
+  opacity: 0;
+  z-index: 50;
+  pointer-events: none;
+  padding: 60px;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 35px var(--primary-s-color);
+  transition: bottom 0.8s, opacity 0.8s, margin-left 0.8s;
+  &__img img {
+    margin-bottom: 2rem;
+    max-width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__details {
+    margin-left: 8px;
+    width: 100%;
+  }
+  &__boxBtn {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+  }
+  &__btn {
+    display: block;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    color: var(--second-color);
+    background: var(--main-color);
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  &__btn:hover {
+    transform: translateY(-5%);
+    background: #b9b6b6;
+    color: #000;
+  }
+}
+
+.cookie.show {
+  margin-left: 73%;
+}
+
+.cookie.active {
+  bottom: 2rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media screen and (max-width: 871px) {
+  .cookie.show {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 /* ======= Navbar =======*/
 .container {
   max-width: 1120px;
@@ -278,6 +346,53 @@ a {
   }
   .nav__darkmode:hover {
     color: #1c1e2a;
+  }
+}
+
+.nav {
+  /* ======= NAV HUMBGER =======*/
+  &__humbger {
+    position: absolute;
+    display: none;
+    right: 1.5rem;
+    top: 1.5rem;
+    z-index: 100;
+    border: none;
+    width: 38px;
+    height: 38px;
+
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 600px) {
+    &__humbger {
+      display: block;
+    }
+
+    &__humbger .bar,
+    &__humbger::before,
+    &__humbger::after {
+      content: "";
+      display: block;
+      width: 35px;
+      height: 5px;
+      margin: 6px 0;
+      border-radius: 0.75rem;
+      background: var(--primary-color);
+      transition: 0.3s ease-in-out;
+    }
+
+    &__humbger.active::before {
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    &__humbger.active::after {
+      transform: rotate(45deg) translate(-9px, -8px);
+    }
+
+    &__humbger.active .bar {
+      opacity: 0;
+    }
   }
 }
 
@@ -771,7 +886,6 @@ a {
   border-radius: 0.75rem;
   color: #000;
   overflow: hidden;
-  transition: 0.4s;
   box-shadow: 0 1px 16px rgb(0, 0, 0, 0.2);
   transition: right 0.5s, opacity 0.5s;
   animation-name: btnScrollToTop;
@@ -785,6 +899,7 @@ a {
   right: 1.5rem;
   opacity: 1;
 }
+
 @keyframes btnScrollToTop {
   0% {
     transform: translateY(0);
@@ -794,118 +909,5 @@ a {
   }
   100% {
     transform: translateY(0);
-  }
-}
-
-/* ======= COOKIE =======*/
-.cookie {
-  position: fixed;
-  display: flex;
-  width: 340px;
-  background: var(--second-color);
-  bottom: -100%;
-  margin-left: 100%;
-  opacity: 0;
-  z-index: 50;
-  pointer-events: none;
-  padding: 60px;
-  border-radius: 0.75rem;
-  box-shadow: 0 1px 35px var(--primary-s-color);
-  transition: bottom 0.8s, opacity 0.8s, margin-left 0.8s;
-  &__img img {
-    margin-bottom: 2rem;
-    max-width: 80px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  &__details {
-    margin-left: 8px;
-    width: 100%;
-  }
-  &__boxBtn {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 1rem;
-  }
-  &__btn {
-    display: block;
-    padding: 8px;
-    border: none;
-    outline: none;
-    font-weight: 600;
-    border-radius: 0.75rem;
-    color: var(--second-color);
-    background: var(--main-color);
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  &__btn:hover {
-    transform: translateY(-5%);
-    background: #b9b6b6;
-    color: #000;
-  }
-}
-
-.cookie.show {
-  margin-left: 73%;
-}
-
-.cookie.active {
-  bottom: 2rem;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-@media screen and (max-width: 871px) {
-  .cookie.show {
-    margin-left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-/* ======= NAV HUMBGER =======*/
-.nav__humbger {
-  position: absolute;
-  display: none;
-  right: 1.5rem;
-  top: 1.5rem;
-  z-index: 100;
-  border: none;
-  width: 38px;
-  height: 38px;
-
-  cursor: pointer;
-}
-
-@media screen and (max-width: 600px) {
-  .nav__humbger {
-    display: block;
-  }
-
-  .nav__humbger .bar,
-  .nav__humbger::before,
-  .nav__humbger::after {
-    content: "";
-    display: block;
-    width: 35px;
-    height: 5px;
-    margin: 6px 0;
-    border-radius: 0.75rem;
-    background: var(--primary-color);
-    transition: 0.3s ease-in-out;
-  }
-
-  .nav__humbger.active::before {
-    transform: rotate(-45deg) translate(-9px, 6px);
-  }
-
-  .nav__humbger.active::after {
-    transform: rotate(45deg) translate(-9px, -8px);
-  }
-
-  .nav__humbger.active .bar {
-    opacity: 0;
   }
 }
