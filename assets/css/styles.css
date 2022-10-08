@@ -191,7 +191,7 @@ a {
   pointer-events: none;
   padding: 60px;
   border-radius: 0.75rem;
-  box-shadow: 0 1px 35px var(--primary-s-color);
+  box-shadow: 0 1px 35px rgba(0, 0, 0, 0.2);
   transition: bottom 0.8s, opacity 0.8s, margin-left 0.8s;
 }
 .cookie__img img {
@@ -595,7 +595,7 @@ a {
   padding: 15px;
   border-radius: 0.75rem;
   background: var(--second-color);
-  box-shadow: 0 4px 15px var(--primary-s-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .skills__title {
   text-align: center;
@@ -724,7 +724,7 @@ a {
   resize: none;
   border: none;
   background: var(--second-color);
-  box-shadow: 0 1px 15px var(--primary-s-color);
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
   border-radius: 0.75rem;
   outline: none;
 }

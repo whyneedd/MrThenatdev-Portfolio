@@ -194,7 +194,7 @@ a {
   pointer-events: none;
   padding: 60px;
   border-radius: 0.75rem;
-  box-shadow: 0 1px 35px var(--primary-s-color);
+  box-shadow: 0 1px 35px rgb(0, 0, 0, 0.2);
   transition: bottom 0.8s, opacity 0.8s, margin-left 0.8s;
   &__img img {
     margin-bottom: 2rem;
@@ -620,7 +620,7 @@ a {
     padding: 15px;
     border-radius: 0.75rem;
     background: var(--second-color);
-    box-shadow: 0 4px 15px var(--primary-s-color);
+    box-shadow: 0 4px 15px rgb(0, 0, 0, 0.2);
   }
   &__title {
     text-align: center;
@@ -753,7 +753,7 @@ a {
     resize: none;
     border: none;
     background: var(--second-color);
-    box-shadow: 0 1px 15px var(--primary-s-color);
+    box-shadow: 0 1px 15px rgb(0, 0, 0, 0.2);
     border-radius: 0.75rem;
     outline: none;
   }
