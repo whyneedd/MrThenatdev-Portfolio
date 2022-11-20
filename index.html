@@ -10,16 +10,16 @@
       property="og:image"
       content="https://www.mrthenatdev.ml/assets/img/logo.png"
     />
-    <meta property="og:title" content="Thenat - Overview" />
+    <meta property="og:title" content="Wahyne - Overview" />
     <meta property="og:site_name" content="Jordan" />
-    <meta property="og:url" content="https://www.mrthenatdev.ml" />
+    <meta property="og:url" content="https://www.thenat.ml" />
     <meta
       property="og:description"
       content="Full stack web. self-taught programming student
        during my off hours."
     />
 
-    <meta name="theme-color" content="#ffc300" />
+    <meta name="theme-color" content="#ef8c34" />
     <link rel="icon" type="image/png" href="assets/img/logo.png" />
 
     <!-- ===== GOOGLE FONTS ===== -->
@@ -80,7 +80,7 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <title>MrThenat - Portfolio</title>
+    <title>Wahyne - Portfolio</title>
   </head>
 
   <body>
@@ -88,6 +88,9 @@
     <div class="load">
       <div class="load__center">
         <div class="load__container">
+          <div class="load__box"></div>
+          <div class="load__box"></div>
+          <div class="load__box"></div>
           <div class="load__box"></div>
         </div>
       </div>
@@ -100,7 +103,10 @@
     <header class="header js-header">
       <div class="container">
         <div class="logo">
-          <h2 onclick="window.location.href='https://mrthenatdev.ml'">MrThenat</h2>
+          <img
+            src="https://cdn.discordapp.com/attachments/1022258434353147936/1036792963709276220/26-Cowok-Tangan-Merah-sedang-Minum.jpg"
+            alt="" title="Wahyne"
+          />
         </div>
         <nav class="nav__menu">
           <ul class="nav__list">
@@ -149,59 +155,47 @@
 
     <!-- ===== HOME ===== -->
     <section class="section" id="Home">
-      <div class="home bd-grid">
-        <div class="home__data">
-          <h2>
-            <span>Hi,</span><br />
-            I am <span class="auto-type"></span>.
-          </h2>
-          <h3 class="gray mbg">FrontEnd & BackEnd Developer</h3>
-          <p>
-            I'm a digital product designer focusing on crafting user experiences
-            and design systems for software, web products. I'm passionate about
-            applying consumer psychology for an interaction science-backed
-            approach. I'm learning new programming languages and I'm still doing
-            everything to the fullest!
-          </p>
+      <div class="home">
+        <div class="home__main">
+          <div class="home__data">
+            <h2>
+              <span>Hi,</span><br />
+              I am <span class="auto-type"></span>.
+            </h2>
+            <h3 class="gray mbg">FrontEnd & BackEnd Developer</h3>
+            <p>
+              I'm a digital product designer focusing on crafting user experiences
+              and design systems for software, web products. I'm passionate about
+              applying consumer psychology for an interaction science-backed
+              approach. I'm learning new programming languages and I'm still doing
+              everything to the fullest!
+            </p>
+  
+            <div class="home__boxBtn">
+              <button
+                class="home__btn"
+                target="_bank"
+                onclick="window.location.href='mailto:jordan2offshel@hotmail.com'"
+                type="button"
+              >
+                Hire me
+              </button>
+              <button
+                class="home__btn"
+                target="_bank"
+                onclick="alert('Sorry this fucntion is not working')"
+                type="button"
+              >
+                Download CV
+              </button>
+            </div>
+          </div>
           <div class="home__img">
-            <img class="home__img-data" src="assets/img/logo.png" alt="" />
-          </div>
-          <div class="home__social">
-            <ul>
-              <li>
-                <a href="https://www.instagram.com/jordannart" target="_bank"
-                  ><i class="bx bxl-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a href="http://www.buymeacoffee.com/Zetroxdev" target="_bank"
-                  ><i class="bx bxs-coffee-togo"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://github.com/thenatdev" target="_bank"
-                  ><i class="fa-brands fa-github-alt"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="home__boxBtn">
-            <button
-              class="home__btn"
-              target="_bank"
-              onclick="window.location.href='mailto:jordan2offshel@hotmail.com'"
-              type="button"
-            >
-              Hire me
-            </button>
-            <button
-              class="home__btn"
-              target="_bank"
-              onclick="alert('Sorry this fucntion is not working')"
-              type="button"
-            >
-              Download CV
-            </button>
+            <img
+              class="home__img-data"
+              src="https://cdn.discordapp.com/attachments/1022258434353147936/1036792963709276220/26-Cowok-Tangan-Merah-sedang-Minum.jpg"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -291,8 +285,58 @@
 
     <!-- ===== PROJETS ===== -->
     <section class="section" id="projets">
-      <h2 class="section__title"><i class="fa-solid fa-clock-rotate-left"></i> Soon</h2>
-      <div class="projets"></div>
+      <h2 class="section__title">
+        <i class="fa-solid fa-bars-progress"></i> Projets
+      </h2>
+      <div class="projets bd-grid">
+        <div class="projets__container">
+          <div class="projets__cardprojets">
+            <div class="projets__img-container">
+              <img class="projets__cardsimg" src="assets/img/img1.jpg" alt="" />
+            </div>
+            <div class="projets__data">
+              <h2>Slywinter(Old-projet)</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias ipsam nobis eveniet?
+              </p>
+            </div>
+            <div class="projets__button-container">
+              <button class="projets__button">View projet</button>
+            </div>
+          </div>
+          <div class="projets__cardprojets">
+            <div class="projets__img-container">
+              <img class="projets__cardsimg" src="assets/img/img1.jpg" alt="" />
+            </div>
+            <div class="projets__data">
+              <h2>Celua</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias ipsam nobis eveniet?
+              </p>
+            </div>
+            <div class="projets__button-container">
+              <button class="projets__button">View projet</button>
+            </div>
+          </div>
+          <div class="projets__cardprojets">
+            <div class="projets__img-container">
+              <img class="projets__cardsimg" src="assets/img/img1.jpg" alt="" />
+            </div>
+            <div class="projets__data">
+              <h2>Nuklaria</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias ipsam nobis eveniet?
+              </p>
+            </div>
+            <div class="projets__button-container">
+              <button class="projets__button">View projet</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- ===== FOOTER ===== -->
@@ -300,7 +344,7 @@
       <div class="footer__container">
         <div class="footer__column">
           <div class="footer__data">
-            <h2 class="yellow">Thenat</h2>
+            <h2 class="yellow">Asunna</h2>
             <div class="footer__social">
               <ul>
                 <li class="footer__item">
@@ -340,7 +384,7 @@
                 </li>
               </ul>
             </div>
-            <p>2022 &copy;All right reserved, developed by Thenat</p>
+            <p>2022 &copy;All right reserved, developed by Asunna.</p>
           </div>
         </div>
       </div>
@@ -374,6 +418,6 @@
       <i class="bx bxs-chevron-up"></i>
     </button>
 
-                                     <!-- ==== CODE CREATED BY MrThenat ===== -->
+    <!-- ==== CODE CREATED BY Thenat ===== -->
   </body>
 </html>

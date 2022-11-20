@@ -17,7 +17,7 @@ menu.onclick = () => {
 window.addEventListener("load", loading);
 
 function loading() {
-  setTimeout(showpage, 1500);
+  setTimeout(showpage, 1200);
 }
 
 function showpage() {
@@ -26,19 +26,11 @@ function showpage() {
 }
 
 var typed = new Typed(".auto-type", {
-  strings: ["a Mrthenat", "a Dev", "a Designer", "a Freelancer"],
+  strings: ["a Wahyne", "a Dev", "a Designer", "a Freelancer"],
   typeSpeed: 150,
   backSpeed: 150,
   loop: true,
 });
-
-var panelVisible = document.getElementsByClassName("faq__contentBox");
-
-for (i = 0; i < panelVisible.length; i++) {
-  panelVisible[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-  });
-}
 
 function SendMail() {
   var mailtosend =
@@ -54,7 +46,11 @@ var tl = gsap.timeline({ ease: { defauts: "power1.out" } });
 
 setTimeout(function () {
   tl.to(".home__data p", { opacity: 1, y: "0%", duration: 0.5, stagger: 0.25 });
-  tl.to(".home__social", { opacity: 1, x: "0%", duration: 0.5, stagger: 0.25 });
-  tl.to(".home__img .home__img-data", { opacity: 1, x: "0%", duration: 0.5, stagger: 0.25 });
+  tl.to(".home__img .home__img-data", {
+    opacity: 1,
+    x: "0%",
+    duration: 0.5,
+    stagger: 0.25,
+  });
   tl.to(".home__btn", { opacity: 1, y: "0%", duration: 0.5, stagger: 0.25 });
 }, 1600);
