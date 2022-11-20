@@ -143,7 +143,7 @@ a {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: #000;
+  background-color: var(--primary-color);
   animation: move 500ms linear 0ms infinite;
   margin-right: 30px;
 }
